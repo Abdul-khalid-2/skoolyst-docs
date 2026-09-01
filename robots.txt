@@ -1,0 +1,7 @@
+# Skoolyst Documentation - robots.txt
+# https://docs.skoolyst.com
+
+User-agent: *
+Allow: /
+
+Sitemap: https://docs.skoolyst.com/sitemap.xml
