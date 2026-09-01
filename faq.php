@@ -38,6 +38,13 @@
   </script>
 </head>
 <body>
+<?php
+$isHomePage = false;
+require __DIR__ . '/layout/header.php';
+require __DIR__ . '/layout/sidebar.php';
+require __DIR__ . '/layout/search.php';
+?>
+
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
@@ -190,5 +197,7 @@
   <script type="module" src="/assets/js/data.js"></script>
   <script type="module" src="/assets/js/layout.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<?php require __DIR__ . '/layout/footer.php'; ?>
 </body>
 </html>

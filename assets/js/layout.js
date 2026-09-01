@@ -48,162 +48,6 @@
     return path === '' || path === 'index.php';
   }
 
-  function buildHeader() {
-    var current = getCurrentPage();
-    var navLinks = NAV.main.map(function (item) {
-      var isActive = item.href === current;
-      return '<a class="nav-link' + (isActive ? ' active' : '') + '" href="' + BASE + item.href + '">' + item.label + '</a>';
-    }).join('');
-
-    return '' +
-      '<a href="#main-content" class="skip-link">Skip to main content</a>' +
-      '<header class="site-header" role="banner">' +
-        '<div class="header-inner">' +
-          '<a href="' + BASE + 'index.php" class="logo-link" aria-label="Skoolyst Documentation Home">' +
-            '<span class="logo-mark">S</span>' +
-            '<span class="logo-text">Skoolyst<span class="docs-label">Documentation</span></span>' +
-          '</a>' +
-          '<nav class="header-nav" aria-label="Primary">' + navLinks + '</nav>' +
-          '<div class="header-actions">' +
-            '<div class="version-selector">' +
-              '<span class="version-label">Version</span>' +
-              '<select id="version-select" aria-label="Documentation version">' +
-                '<option value="latest">Latest</option>' +
-                '<option value="v0.2">v0.2 (Dev)</option>' +
-                '<option value="v0.1">v0.1 (Dev)</option>' +
-              '</select>' +
-            '</div>' +
-            '<button class="search-trigger" id="search-trigger" aria-label="Search documentation">' +
-              ICON_SVG.search +
-              '<span class="search-placeholder">Search docs...</span>' +
-              '<kbd>Ctrl K</kbd>' +
-            '</button>' +
-            '<button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">' +
-              ICON_SVG.menu +
-            '</button>' +
-          '</div>' +
-        '</div>' +
-      '</header>';
-  }
-
-  function buildSidebar() {
-    var current = getCurrentPage();
-    var sections = NAV.sidebar.map(function (section) {
-      var items = section.items.map(function (item) {
-        var isActive = item.href === current;
-        return '<li><a href="' + BASE + item.href + '" class="' + (isActive ? 'active' : '') + '">' + item.label + '</a></li>';
-      }).join('');
-      return '' +
-        '<div class="sidebar-section">' +
-          '<div class="sidebar-heading">' + section.heading + '</div>' +
-          '<ul class="sidebar-nav">' + items + '</ul>' +
-        '</div>';
-    }).join('');
-
-    return '' +
-      '<aside class="doc-sidebar" id="doc-sidebar" aria-label="Documentation navigation">' +
-        sections +
-      '</aside>' +
-      '<div class="sidebar-backdrop" id="sidebar-backdrop"></div>';
-  }
-
-  function buildSearchModal() {
-    return '' +
-      '<div class="search-modal" id="search-modal" role="dialog" aria-label="Search documentation" aria-modal="true">' +
-        '<div class="search-panel">' +
-          '<div class="search-input-wrap">' +
-            ICON_SVG.search +
-            '<input type="text" class="search-input" id="search-input" placeholder="Search documentation..." autocomplete="off" />' +
-            '<button class="search-close" id="search-close" aria-label="Close search">' + ICON_SVG.close + '</button>' +
-          '</div>' +
-          '<div class="search-results" id="search-results"></div>' +
-        '</div>' +
-      '</div>';
-  }
-
-  function buildFooter() {
-    return '' +
-      '<footer class="site-footer" role="contentinfo">' +
-        '<div class="footer-inner">' +
-          '<div class="footer-grid">' +
-            '<div class="footer-brand">' +
-              '<a href="' + BASE + 'index.php" class="logo-link" style="margin-bottom:0.5rem">' +
-                '<span class="logo-mark">S</span>' +
-                '<span class="logo-text">Skoolyst<span class="docs-label">Documentation</span></span>' +
-              '</a>' +
-              '<p>Official documentation for the Skoolyst educational technology ecosystem.</p>' +
-            '</div>' +
-            '<div>' +
-              '<h4>Documentation</h4>' +
-              '<ul>' +
-                '<li><a href="' + BASE + 'getting-started.php">Getting Started</a></li>' +
-                '<li><a href="' + BASE + 'overview.php">Overview</a></li>' +
-                '<li><a href="' + BASE + 'guides.php">Guides</a></li>' +
-                '<li><a href="' + BASE + 'features.php">Features</a></li>' +
-              '</ul>' +
-            '</div>' +
-            '<div>' +
-              '<h4>Resources</h4>' +
-              '<ul>' +
-                '<li><a href="' + BASE + 'versions.php">Versions</a></li>' +
-                '<li><a href="' + BASE + 'release-notes.php">Release Notes</a></li>' +
-                '<li><a href="' + BASE + 'news.php">News</a></li>' +
-                '<li><a href="' + BASE + 'faq.php">FAQ</a></li>' +
-              '</ul>' +
-            '</div>' +
-            '<div>' +
-              '<h4>Ecosystem</h4>' +
-              '<ul>' +
-                '<li><a href="' + BASE + 'products.php">Products</a></li>' +
-                '<li><a href="' + BASE + 'developers.php">API / Developers</a></li>' +
-                '<li><a href="' + BASE + 'about.php">About</a></li>' +
-              '</ul>' +
-            '</div>' +
-          '</div>' +
-          '<div class="footer-bottom">' +
-            '<span>&copy; 2024-2026 Skoolyst. All rights reserved.</span>' +
-            '<span>docs.skoolyst.com</span>' +
-          '</div>' +
-        '</div>' +
-      '</footer>';
-  }
-
-  function buildBackToTop() {
-    return '<button class="back-to-top" id="back-to-top" aria-label="Back to top">' + ICON_SVG.arrowUp + '</button>';
-  }
-
-  function injectLayout() {
-    BASE = getBasePath();
-    var headerHtml = buildHeader();
-    var sidebarHtml = buildSidebar();
-    var searchHtml = buildSearchModal();
-    var footerHtml = buildFooter();
-    var backToTopHtml = buildBackToTop();
-
-    // Insert header at the beginning of body
-    document.body.insertAdjacentHTML('afterbegin', headerHtml + sidebarHtml + searchHtml);
-
-    // Insert footer and back-to-top at the end of body
-    document.body.insertAdjacentHTML('beforeend', footerHtml + backToTopHtml);
-
-    // For non-home pages, wrap content in the proper layout
-    if (!isHome()) {
-      wrapContent();
-    } else {
-      // On home page, hide the sidebar and backdrop entirely
-      var sb = document.getElementById('doc-sidebar');
-      var bd = document.getElementById('sidebar-backdrop');
-      if (sb) sb.style.display = 'none';
-      if (bd) bd.style.display = 'none';
-      document.body.classList.add('is-home');
-    }
-
-    initInteractions();
-    initSearch();
-    initBackToTop();
-    initVersionSelector();
-  }
-
   function wrapContent() {
     // Find the main content element
     var main = document.getElementById('main-content') || document.querySelector('main');
@@ -460,13 +304,34 @@
     });
   }
 
+  // Initialize behavior for markup rendered by PHP layout partials.
+  function initLayout() {
+    BASE = getBasePath();
+    var main = document.getElementById('main-content') || document.querySelector('main');
+    var isHomePage = !document.querySelector('.doc-article') && (window.location.pathname.split('/').pop() === '' || window.location.pathname.split('/').pop() === 'index.php');
+
+    if (!isHomePage) {
+      wrapContent();
+    } else {
+      var sb = document.getElementById('doc-sidebar');
+      var bd = document.getElementById('sidebar-backdrop');
+      if (sb) sb.style.display = 'none';
+      if (bd) bd.style.display = 'none';
+      document.body.classList.add('is-home');
+    }
+
+    initInteractions();
+    initSearch();
+    initBackToTop();
+    initVersionSelector();
+  }
+
   // Expose icons globally for page-level use
   window.ICON_SVG = ICON_SVG;
 
-  // Auto-inject when DOM is ready
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', injectLayout);
+    document.addEventListener('DOMContentLoaded', initLayout);
   } else {
-    injectLayout();
+    initLayout();
   }
 })();

@@ -25,6 +25,13 @@
   <link href="/assets/css/style.css" rel="stylesheet" />
 </head>
 <body>
+<?php
+$isHomePage = false;
+require __DIR__ . '/layout/header.php';
+require __DIR__ . '/layout/sidebar.php';
+require __DIR__ . '/layout/search.php';
+?>
+
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
@@ -112,5 +119,7 @@
   </main>
   <script type="module" src="/assets/js/data.js"></script>
   <script type="module" src="/assets/js/layout.js"></script>
+
+<?php require __DIR__ . '/layout/footer.php'; ?>
 </body>
 </html>

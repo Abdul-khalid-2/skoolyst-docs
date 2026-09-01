@@ -40,6 +40,12 @@
   </script>
 </head>
 <body>
+<?php
+$isHomePage = true;
+require __DIR__ . '/layout/header.php';
+require __DIR__ . '/layout/search.php';
+?>
+
   <main id="main-content">
     <!-- Hero -->
     <section class="home-hero">
@@ -301,5 +307,7 @@
 
   <script type="module" src="/assets/js/data.js"></script>
   <script type="module" src="/assets/js/layout.js"></script>
+
+<?php require __DIR__ . '/layout/footer.php'; ?>
 </body>
 </html>
