@@ -15,7 +15,7 @@ const NAV = {
     { label: 'Release Notes', href: 'release-notes.php' },
     { label: 'News', href: 'news.php' },
     { label: 'FAQ', href: 'faq.php' },
-    // { label: 'API', href: 'developers.php' },
+    { label: 'API', href: 'developers.php' },
     { label: 'About', href: 'about.php' },
   ],
   sidebar: [

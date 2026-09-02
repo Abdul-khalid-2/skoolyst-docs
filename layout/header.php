@@ -1,6 +1,8 @@
 <?php
 $layoutBase = str_contains(str_replace('\\', '/', $_SERVER['PHP_SELF'] ?? ''), '/docs/') ? '../' : '';
 $currentPage = basename($_SERVER['PHP_SELF'] ?? 'index.php');
+// Keep the top header focused on the four most important destinations.
+// Secondary pages remain available through the sidebar, footer, and search.
 $mainNav = [
     ['label' => 'Documentation', 'href' => 'index.php'],
     ['label' => 'Getting Started', 'href' => 'getting-started.php'],
@@ -8,12 +10,12 @@ $mainNav = [
     ['label' => 'Products', 'href' => 'products.php'],
     ['label' => 'Guides', 'href' => 'guides.php'],
     ['label' => 'Features', 'href' => 'features.php'],
-    ['label' => 'Versions', 'href' => 'versions.php'],
-    ['label' => 'Release Notes', 'href' => 'release-notes.php'],
-    ['label' => 'News', 'href' => 'news.php'],
-    ['label' => 'FAQ', 'href' => 'faq.php'],
-    ['label' => 'API', 'href' => 'developers.php'],
-    ['label' => 'About', 'href' => 'about.php'],
+    // ['label' => 'Versions', 'href' => 'versions.php'],
+    // ['label' => 'Release Notes', 'href' => 'release-notes.php'],
+    // ['label' => 'News', 'href' => 'news.php'],
+    // ['label' => 'FAQ', 'href' => 'faq.php'],
+    // ['label' => 'API', 'href' => 'developers.php'],
+    // ['label' => 'About', 'href' => 'about.php'],
 ];
 ?>
 <a href="#main-content" class="skip-link">Skip to main content</a>
