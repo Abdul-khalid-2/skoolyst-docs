@@ -1,5 +1,5 @@
 <?php
-// Static PHP view. Backend logic can be introduced later without changing the page structure.
+// Static PHP view. Product/version status is maintained here until dynamic release management is introduced.
 ?>
 <!doctype html>
 <html lang="en">
@@ -7,17 +7,17 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Versions | Skoolyst Documentation</title>
-  <meta name="description" content="Version history and development status of Skoolyst releases. All versions are currently in development stage." />
+  <title>Versions & Product Status | Skoolyst Documentation</title>
+  <meta name="description" content="Current versions, deployment status, and product status across the Skoolyst application ecosystem." />
   <link rel="canonical" href="https://docs.skoolyst.com/versions.php" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="Versions | Skoolyst Documentation" />
-  <meta property="og:description" content="Version history and development status of Skoolyst releases." />
+  <meta property="og:title" content="Versions & Product Status | Skoolyst Documentation" />
+  <meta property="og:description" content="Current versions, deployment status, and product status across the Skoolyst ecosystem." />
   <meta property="og:url" content="https://docs.skoolyst.com/versions.php" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Versions | Skoolyst Documentation" />
-  <meta name="twitter:description" content="Version history and development status of Skoolyst releases." />
+  <meta name="twitter:title" content="Versions & Product Status | Skoolyst Documentation" />
+  <meta name="twitter:description" content="Current versions, deployment status, and product status across the Skoolyst ecosystem." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -40,70 +40,90 @@ require __DIR__ . '/layout/search.php';
         <span class="breadcrumb-current">Versions</span>
       </nav>
 
-      <h1>Versions</h1>
-      <p class="lead">Skoolyst version history. All versions listed are in development stage — no production releases have been published yet.</p>
+      <h1>Versions &amp; Product Status</h1>
+      <p class="lead">Skoolyst is now a multi-application education ecosystem. The core applications have been developed, with fixes, testing, deployment improvements and further enhancements continuing.</p>
 
-      <h2 id="versioning-approach">How Skoolyst Versioning Works</h2>
-      <p>Skoolyst follows a <code>MAJOR.MINOR.PATCH</code> versioning approach. During the development phase, versions are numbered starting from <code>v0.1</code> and increment as development progresses. Once the platform reaches production readiness, version numbering will follow standard semantic versioning.</p>
-      <ul>
-        <li><strong>Major</strong> — significant changes or breaking changes</li>
-        <li><strong>Minor</strong> — new features and improvements (backward compatible)</li>
-        <li><strong>Patch</strong> — bug fixes and small adjustments</li>
-      </ul>
-
-      <h2 id="version-history">Version History</h2>
-
-      <div class="card-base version-card mb-4">
-        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
-          <h3 style="margin:0" class="version-number">Skoolyst v0.2</h3>
-          <span class="status-badge status-development">Development</span>
-        </div>
-        <p class="version-date">Release date: Not yet released</p>
-        <p><strong>Highlights:</strong> Continued development of core modules and platform infrastructure.</p>
+      <div class="card-base mb-4">
+        <h2 style="margin-top:0">Current Ecosystem</h2>
+        <p>Each Skoolyst application can have its own release lifecycle. A product being developed, deployed, or integrated should therefore be documented separately instead of treating the entire ecosystem as one version.</p>
         <table>
-          <thead><tr><th>Field</th><th>Details</th></tr></thead>
+          <thead><tr><th>Product</th><th>Version / Stage</th><th>Status</th><th>Purpose</th></tr></thead>
           <tbody>
-            <tr><td>Version</td><td>v0.2</td></tr>
-            <tr><td>Status</td><td>Development</td></tr>
-            <tr><td>Release date</td><td>Not yet released</td></tr>
-            <tr><td>Highlights</td><td>Continued module development</td></tr>
-            <tr><td>Changes</td><td>Placeholder — details will be added when this version is released</td></tr>
-            <tr><td>Known issues</td><td>Placeholder — will be documented upon release</td></tr>
+            <tr><td><strong>Skoolyst</strong></td><td>Core platform</td><td>Complete — fixes in progress</td><td>Schools, Shops, Blogs, Videos and MCQs</td></tr>
+            <tr><td><strong>Skoolyst Teachers</strong></td><td>v1</td><td>Deployed</td><td>Teacher profiles, listings and professional online profiles</td></tr>
+            <tr><td><strong>Skoolyst Docs</strong></td><td>Current documentation build</td><td>Available &amp; continuously updated</td><td>Official documentation and knowledge base</td></tr>
+            <tr><td><strong>Skoolyst Ads</strong></td><td>Integration stage</td><td>Developed / integrating</td><td>Central advertising engine and API for Skoolyst applications</td></tr>
           </tbody>
         </table>
-        <p class="placeholder-notice">This is placeholder version information. Real details will be added when the version is released.</p>
       </div>
 
-      <div class="card-base version-card mb-4">
-        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-2">
-          <h3 style="margin:0" class="version-number">Skoolyst v0.1</h3>
-          <span class="status-badge status-development">Development</span>
-        </div>
-        <p class="version-date">Release date: Development stage</p>
-        <p><strong>Highlights:</strong> Initial development build with foundational platform architecture and core module scaffolding.</p>
-        <table>
-          <thead><tr><th>Field</th><th>Details</th></tr></thead>
-          <tbody>
-            <tr><td>Version</td><td>v0.1</td></tr>
-            <tr><td>Status</td><td>Development</td></tr>
-            <tr><td>Release date</td><td>Development stage</td></tr>
-            <tr><td>Highlights</td><td>Initial platform architecture and module scaffolding</td></tr>
-            <tr><td>Changes</td><td>Placeholder — initial development build</td></tr>
-            <tr><td>Known issues</td><td>Placeholder — will be documented as development progresses</td></tr>
-          </tbody>
-        </table>
-        <p class="placeholder-notice">This is placeholder version information. Real details will be added when the version is released.</p>
-      </div>
-
-      <h2 id="version-roadmap">Version Roadmap</h2>
-      <p>As Skoolyst progresses through development, new versions will be documented here. The roadmap includes:</p>
+      <h2 id="skoolyst">Skoolyst — Core Platform</h2>
+      <p>The main Skoolyst application has been developed around the original goal of bringing education-related discovery, information, content and practice into one ecosystem.</p>
       <ul>
-        <li>Continued development of core modules (Schools, Stores, Media, MCQs)</li>
-        <li>Platform stabilization and performance improvements</li>
-        <li>Preparation for separating modules into independent applications</li>
-        <li>Developer API design and implementation</li>
+        <li><strong>Schools</strong> — school discovery and listings.</li>
+        <li><strong>Shops</strong> — school-related businesses such as stationery, uniforms, shoes, bags and other education-related stores.</li>
+        <li><strong>Blogs</strong> — education-focused articles, awareness and community knowledge.</li>
+        <li><strong>Videos</strong> — educational and school-related video content.</li>
+        <li><strong>MCQs</strong> — subject practice, tests, mock tests and preparation support.</li>
       </ul>
-      <p>No specific release dates are announced. Development status will be reflected through <a href="release-notes.php">Release Notes</a> and <a href="news.php">News</a>.</p>
+      <p><strong>Current status:</strong> The core application is developed and the current focus is on fixes, testing, refinement and ongoing improvements.</p>
+
+      <h2 id="teachers">Skoolyst Teachers — v1</h2>
+      <p><strong>Website:</strong> <a href="https://teachers.skoolyst.com">teachers.skoolyst.com</a></p>
+      <p>Skoolyst Teachers v1 is deployed and provides teachers with a professional online identity that can be shared with schools, recruiters and other people.</p>
+      <ul>
+        <li>Teacher signup and login</li>
+        <li>Professional teacher profile</li>
+        <li>Education and qualifications</li>
+        <li>Teaching experience</li>
+        <li>Skills</li>
+        <li>Awards and achievements</li>
+        <li>Shareable professional profile link</li>
+        <li>Teacher listings on the Skoolyst platform</li>
+        <li>Profile editing and updating from anywhere</li>
+      </ul>
+      <p>The goal is to reduce the repeated work of creating, updating and sending CVs while making it easier for schools to discover suitable teachers.</p>
+
+      <h2 id="docs">Skoolyst Docs</h2>
+      <p><strong>Website:</strong> <a href="https://docs.skoolyst.com">docs.skoolyst.com</a></p>
+      <p>Skoolyst Docs is the central documentation website for the application family. It explains the product vision, modules, features, guides, integrations, versions and development information.</p>
+
+      <h2 id="ads">Skoolyst Ads</h2>
+      <p>Skoolyst Ads is designed as a centralized advertising engine for the Skoolyst ecosystem. Advertisers and administrators can manage advertisements while connected applications request advertisements through an API.</p>
+      <h3>Advertisement management</h3>
+      <ul>
+        <li>Create advertisements</li>
+        <li>Edit and update advertisements</li>
+        <li>Delete advertisements</li>
+        <li>Pause and resume advertisements</li>
+        <li>Manage advertisers and admin access</li>
+        <li>Create and manage placements</li>
+      </ul>
+      <h3>Application placements</h3>
+      <p>A placement identifies where an advertisement can be displayed, for example:</p>
+      <pre><code>skoolyst.com
+teachers.skoolyst.com
+blog.skoolyst.com
+other Skoolyst applications</code></pre>
+      <p>Each registered placement can use an API token to communicate with Skoolyst Ads. This allows multiple Skoolyst applications to share one advertising infrastructure instead of building separate ad-management systems for every application.</p>
+
+      <h2 id="versioning">Versioning Approach</h2>
+      <p>Product versions should describe real release stages rather than placeholder versions. For applications with formal releases, Skoolyst can use <code>MAJOR.MINOR.PATCH</code> semantic versioning.</p>
+      <ul>
+        <li><strong>Major</strong> — significant or breaking changes.</li>
+        <li><strong>Minor</strong> — new backward-compatible features.</li>
+        <li><strong>Patch</strong> — bug fixes and small improvements.</li>
+      </ul>
+      <p>For products that are currently in development or integration, the documentation uses clear status labels such as <strong>Development</strong>, <strong>Deployed</strong>, <strong>Integration</strong> and <strong>Fixes in progress</strong>.</p>
+
+      <h2 id="roadmap">Current Direction</h2>
+      <ul>
+        <li>Fix and stabilize the completed Skoolyst modules.</li>
+        <li>Continue improving the deployed Skoolyst Teachers v1 experience.</li>
+        <li>Maintain and expand the documentation as products evolve.</li>
+        <li>Continue integrating Skoolyst Ads with Skoolyst properties.</li>
+        <li>Document future releases and changes when they become actual releases.</li>
+      </ul>
 
       <nav class="doc-prev-next" aria-label="Pagination">
         <a href="features.php">

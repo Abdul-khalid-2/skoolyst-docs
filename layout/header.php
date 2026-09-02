@@ -4,6 +4,8 @@ $currentPage = basename($_SERVER['PHP_SELF'] ?? 'index.php');
 // Keep the top header focused on the four most important destinations.
 // Secondary pages remain available through the sidebar, footer, and search.
 $mainNav = [
+    // Keep the primary header navigation focused on the core documentation flow.
+    // Secondary pages remain available through the sidebar, footer, search and in-page links.
     ['label' => 'Documentation', 'href' => 'index.php'],
     ['label' => 'Getting Started', 'href' => 'getting-started.php'],
     ['label' => 'Overview', 'href' => 'overview.php'],
@@ -34,9 +36,8 @@ $mainNav = [
       <div class="version-selector">
         <span class="version-label">Version</span>
         <select id="version-select" aria-label="Documentation version">
-          <option value="latest">Latest</option>
-          <option value="v0.2">v0.2 (Dev)</option>
-          <option value="v0.1">v0.1 (Dev)</option>
+          <option value="latest">Current</option>
+          <option value="teachers-v1">Teachers v1</option>
         </select>
       </div>
       <button class="search-trigger" id="search-trigger" aria-label="Search documentation">
