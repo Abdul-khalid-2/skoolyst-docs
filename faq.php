@@ -28,7 +28,7 @@
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      {"@type":"Question","name":"What is Skoolyst?","acceptedAnswer":{"@type":"Answer","text":"Skoolyst is an educational technology ecosystem designed to connect schools, teachers, students, parents and educational services through digital platforms."}},
+      {"@type":"Question","name":"What is Skoolyst?","acceptedAnswer":{"@type":"Answer","text":"Skoolyst is an educational technology ecosystem designed to make education-related discovery, connection, learning and information sharing more organized for parents, schools, teachers, students and education businesses."}},
       {"@type":"Question","name":"What products are part of Skoolyst?","acceptedAnswer":{"@type":"Answer","text":"The main Skoolyst application contains Schools Listing, Stores, Media and MCQs. Planned separate applications include Ads, Blogs, MCQs, Stores and Media under their own subdomains."}},
       {"@type":"Question","name":"Are all Skoolyst products separate applications?","acceptedAnswer":{"@type":"Answer","text":"No. Currently, Schools, Stores, Media and MCQs exist as modules within the main Skoolyst application. Separate subdomains represent the planned future architecture."}},
       {"@type":"Question","name":"What is currently available?","acceptedAnswer":{"@type":"Answer","text":"The main Skoolyst application is currently in development with its core modules: Schools Listing, Stores, Media and MCQs."}},
@@ -179,6 +179,22 @@ require __DIR__ . '/layout/search.php';
               <p>The Skoolyst documentation portal serves as the official reference for understanding the Skoolyst ecosystem. It provides guides, feature documentation, version history, release notes, news, FAQs and future developer API documentation — all in one place. It is designed to be the permanent official documentation hub for the Skoolyst platform.</p>
             </div>
           </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10">Why was Skoolyst created?</button></h2>
+          <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body"><p>Skoolyst was conceived to reduce fragmentation in education discovery and communication. Parents can struggle to discover and compare schools, schools can struggle to reach the right families, teachers can struggle to present their experience and find opportunities, and students need accessible ways to practice knowledge.</p></div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq11">Does Skoolyst choose the best school for a parent?</button></h2>
+          <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body"><p>No. The goal is to organize useful information and make comparison easier. The final decision remains with the parent or family.</p></div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq12">What is Skoolyst Teachers?</button></h2>
+          <div id="faq12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body"><p>It is the planned teacher-focused product for creating and maintaining an online professional profile. Teachers can showcase qualifications, experience, skills and achievements and share one profile link with schools and recruiters.</p></div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq13">What can people use Skoolyst Blogs for?</button></h2>
+          <div id="faq13" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body"><p>Blogs is intended for education-focused articles, awareness, experiences and practical ideas about schools, parenting, teaching, students and education systems.</p></div></div>
         </div>
       </div>
 

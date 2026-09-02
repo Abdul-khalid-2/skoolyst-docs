@@ -12,13 +12,13 @@
   <link rel="canonical" href="https://docs.skoolyst.com/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Skoolyst Documentation | Official Guides & Platform Documentation" />
-  <meta property="og:description" content="Everything you need to understand, use and build with Skoolyst. Explore products, features, guides, updates and more." />
+  <meta property="og:description" content="Understand the idea, ecosystem and products behind Skoolyst. Explore products, features, guides, updates and more." />
   <meta property="og:url" content="https://docs.skoolyst.com/" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Skoolyst Documentation | Official Guides & Platform Documentation" />
-  <meta name="twitter:description" content="Everything you need to understand, use and build with Skoolyst." />
-  <meta name="twitter:description" content="Everything you need to understand, use and build with Skoolyst." />
+  <meta name="twitter:description" content="Understand the idea, ecosystem and products behind Skoolyst." />
+  <meta name="twitter:description" content="Understand the idea, ecosystem and products behind Skoolyst." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -51,8 +51,8 @@ require __DIR__ . '/layout/search.php';
     <section class="home-hero">
       <div class="hero-inner">
         <h1>Skoolyst Documentation</h1>
-        <p class="hero-tagline">Everything you need to understand, use and build with Skoolyst.</p>
-        <p class="hero-desc">Explore Skoolyst products, features, guides, updates, versions and future services from one official documentation portal.</p>
+        <p class="hero-tagline">Understand the idea, ecosystem and products behind Skoolyst.</p>
+        <p class="hero-desc">Learn why Skoolyst was created, what problems it aims to solve, how its products connect parents, schools, teachers and students, and how the ecosystem is evolving.</p>
         <div class="hero-buttons">
           <a href="getting-started.php" class="btn-hero-primary">Get Started</a>
           <a href="products.php" class="btn-hero-secondary">Explore Products</a>
@@ -120,6 +120,23 @@ require __DIR__ . '/layout/search.php';
             </a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Why Skoolyst -->
+    <section class="home-section">
+      <div class="home-content">
+        <div class="section-header">
+          <div class="section-label">The Idea</div>
+          <h2>Why Skoolyst Exists</h2>
+          <p>Education information is often scattered across school websites, social media, advertisements, paper CVs, separate learning platforms and word of mouth.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4"><div class="card-base h-100"><h3>For Parents</h3><p class="mb-0">Make school discovery easier by finding structured information and comparing factors such as distance, fees, curriculum, facilities, transport and reviews.</p></div></div>
+          <div class="col-lg-4"><div class="card-base h-100"><h3>For Schools</h3><p class="mb-0">Give schools a structured digital presence and a better way to become discoverable to families without relying only on banners, social posts or a separate website.</p></div></div>
+          <div class="col-lg-4"><div class="card-base h-100"><h3>For Teachers & Students</h3><p class="mb-0">Help teachers showcase professional experience and help students practice knowledge through education-focused tools and content.</p></div></div>
+        </div>
+        <div class="text-center mt-4"><a href="why-skoolyst.php" class="btn-hero-secondary">Read the Skoolyst Story &rarr;</a></div>
       </div>
     </section>
 

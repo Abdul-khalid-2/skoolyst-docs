@@ -43,7 +43,10 @@ require __DIR__ . '/layout/search.php';
       <h1>Getting Started</h1>
       <p class="lead">New to Skoolyst? This guide walks you through the ecosystem, the main application, its modules and what is coming next.</p>
 
-      <h2 id="what-is-skoolyst">What is Skoolyst?</h2>
+      <h2 id="before-you-start">Start with the reason behind Skoolyst</h2>
+<p>Before exploring individual products, read <a href="why-skoolyst.php">Why Skoolyst?</a>. It explains the real-world problems that inspired the ecosystem and the people it is designed to serve.</p>
+
+<h2 id="what-is-skoolyst">What is Skoolyst?</h2>
       <p>Skoolyst is an educational technology ecosystem designed to connect schools, teachers, students, parents and educational services through digital platforms. Rather than a single product, Skoolyst is being built as a family of interconnected applications that share a common goal: making educational resources more accessible, organized and useful.</p>
       <p>For a deeper explanation, see the <a href="overview.php">Skoolyst Overview</a>.</p>
 
@@ -58,6 +61,7 @@ require __DIR__ . '/layout/search.php';
         <li><strong>Stores</strong> — a marketplace for educational materials</li>
         <li><strong>Media</strong> — educational media content</li>
         <li><strong>MCQs</strong> — multiple-choice question practice and assessment</li>
+        <li><strong>Teachers</strong> — a professional profile and teacher-school connection product</li>
       </ul>
 
       <h2 id="schools">Schools</h2>

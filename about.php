@@ -1,5 +1,5 @@
 <?php
-// Static PHP view. Backend logic can be introduced later without changing the page structure.
+// Static PHP documentation view.
 ?>
 <!doctype html>
 <html lang="en">
@@ -7,17 +7,13 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Skoolyst | Educational Technology Ecosystem</title>
-  <meta name="description" content="Learn about Skoolyst — its vision, mission, ecosystem, product philosophy and development approach." />
+  <title>About Skoolyst | Skoolyst Documentation</title>
+  <meta name="description" content="The purpose, vision, mission and product philosophy behind the Skoolyst educational technology ecosystem." />
   <link rel="canonical" href="https://docs.skoolyst.com/about.php" />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="About Skoolyst | Educational Technology Ecosystem" />
-  <meta property="og:description" content="Learn about Skoolyst — its vision, mission, ecosystem and development approach." />
-  <meta property="og:url" content="https://docs.skoolyst.com/about.php" />
+  <meta property="og:title" content="About Skoolyst | Skoolyst Documentation" />
+  <meta property="og:description" content="The purpose, vision, mission and product philosophy behind the Skoolyst educational technology ecosystem." />
   <meta property="og:site_name" content="Skoolyst Documentation" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="About Skoolyst | Educational Technology Ecosystem" />
-  <meta name="twitter:description" content="Learn about Skoolyst — its vision, mission, ecosystem and development approach." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -31,81 +27,28 @@ require __DIR__ . '/layout/header.php';
 require __DIR__ . '/layout/sidebar.php';
 require __DIR__ . '/layout/search.php';
 ?>
+<main id="main-content">
+  <article class="doc-article">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="index.php">Home</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">About Skoolyst</span>
+    </nav>
+    <h1>About Skoolyst</h1>
+<p class="lead">Skoolyst is being built as an education-focused technology ecosystem rather than a collection of unrelated tools.</p>
+<h2 id="purpose">Purpose</h2>
+<p>The purpose of Skoolyst is to address practical problems caused by fragmented education information: parents struggle to discover and compare schools, schools struggle to reach the right families, teachers struggle to present their professional profiles and find opportunities, and students need better ways to practice and measure knowledge.</p>
+<h2 id="vision">Vision</h2><p>A connected digital education environment where useful information is easier to discover, understand and act upon.</p>
+<h2 id="mission">Mission</h2><p>Build focused products that simplify school discovery, teacher-school connection, educational publishing, assessment, media and school-related commerce.</p>
+<h2 id="product-philosophy">Product philosophy</h2>
+<ul><li><strong>Education first:</strong> products should solve real education-related problems.</li><li><strong>Simple discovery:</strong> important information should not be hidden behind unfamiliar navigation.</li><li><strong>Structured information:</strong> common fields and patterns make comparison easier.</li><li><strong>Specialized experiences:</strong> each application should stay focused on its primary job.</li><li><strong>Ecosystem thinking:</strong> products can work independently while contributing to one larger education network.</li><li><strong>Continuous improvement:</strong> the platform is expected to evolve through testing, feedback and real-world use.</li></ul>
+<h2 id="community">The community layer</h2><p>Skoolyst is also intended to become a place where education stakeholders can share experiences and practical knowledge. Articles, school information, teacher profiles, assessments and media can create a useful knowledge network around the core platform.</p>
+<h2 id="documentation">About this documentation</h2><p>This documentation explains the purpose, products, features, guides, architecture and development status of Skoolyst. Because the ecosystem is under development, planned features and future applications are clearly identified rather than presented as already released functionality.</p>
 
-  <main id="main-content">
-    <article class="doc-article">
-      <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="index.php">Home</a>
-        <span class="breadcrumb-sep">/</span>
-        <span class="breadcrumb-current">About</span>
-      </nav>
-
-      <h1>About Skoolyst</h1>
-      <p class="lead">Skoolyst is an educational technology ecosystem built to connect schools, teachers, students, parents and educational services through a family of digital platforms.</p>
-
-      <h2 id="overview">Overview</h2>
-      <p>Skoolyst is not a single product — it is an ecosystem. The vision behind Skoolyst is to reduce the fragmentation that exists in education today, where schools, learning materials, assessment tools and educational media are scattered across disconnected platforms. By bringing these resources together into a connected ecosystem, Skoolyst aims to make educational discovery, access and management simpler for everyone involved.</p>
-      <p>The platform currently exists as a single unified application containing four core modules — Schools Listing, Stores, Media and MCQs — with plans to evolve each into independent specialized applications connected by a shared ecosystem.</p>
-
-      <h2 id="vision">Vision</h2>
-      <p>To create a unified digital ecosystem where educational resources, tools and communities are accessible, organized and interconnected — making learning more efficient and effective for everyone involved.</p>
-
-      <h2 id="mission">Mission</h2>
-      <p>To build a suite of educational technology products that simplify how schools, teachers, students and parents discover, access and use educational resources — starting with a unified platform and evolving toward specialized applications that serve specific needs.</p>
-
-      <h2 id="ecosystem">Ecosystem</h2>
-      <p>The Skoolyst ecosystem is designed to grow modularly:</p>
-      <ul>
-        <li><strong>Phase 1 (Current)</strong> — A single unified application with integrated modules: Schools, Stores, Media and MCQs</li>
-        <li><strong>Phase 2 (Planned)</strong> — Separating core modules into independent applications under dedicated subdomains</li>
-        <li><strong>Phase 3 (Future)</strong> — Adding new products (Ads, Blogs) and a developer API for third-party integration</li>
-      </ul>
-      <p>This approach allows Skoolyst to start focused and expand organically, with each product serving its domain while remaining connected to the broader ecosystem.</p>
-
-      <h2 id="product-philosophy">Product Philosophy</h2>
-      <p>Skoolyst follows a set of guiding principles:</p>
-      <ul>
-        <li><strong>Simplicity first</strong> — Tools should be easy to understand and use, regardless of technical background</li>
-        <li><strong>Education at the core</strong> — Every feature and product should serve an educational purpose</li>
-        <li><strong>Modular growth</strong> — Start unified, grow modular — each product should be able to evolve independently</li>
-        <li><strong>Transparency</strong> — Be clear about what exists, what is in development, and what is planned</li>
-        <li><strong>Accessibility</strong> — Educational resources should be discoverable and accessible</li>
-      </ul>
-
-      <h2 id="development-approach">Development Approach</h2>
-      <p>Skoolyst is being built incrementally. Rather than launching all products at once, development focuses on:</p>
-      <ul>
-        <li>Building and refining the core platform first</li>
-        <li>Adding features progressively with clear status indicators</li>
-        <li>Documenting everything transparently through this documentation portal</li>
-        <li>Planning for future separation and independent scaling of modules</li>
-      </ul>
-      <p>No production versions have been released yet. All current versions are in development stage. Release notes and version history are maintained transparently so users can track progress.</p>
-
-      <h2 id="documentation-purpose">Purpose of This Documentation</h2>
-      <p>This documentation portal serves as the official reference for the entire Skoolyst ecosystem. It is designed to be:</p>
-      <ul>
-        <li><strong>Comprehensive</strong> — covering all products, features and guides</li>
-        <li><strong>Transparent</strong> — clearly indicating development status of every product and feature</li>
-        <li><strong>Maintainable</strong> — structured so new content can be added easily as the platform grows</li>
-        <li><strong>Future-ready</strong> — including a developer API section that will be populated when the API is available</li>
-      </ul>
-
-      <nav class="doc-prev-next" aria-label="Pagination">
-        <a href="developers.php">
-          <span class="pn-label">&larr; Previous</span>
-          <span class="pn-title">API / Developers</span>
-        </a>
-        <a href="index.php" class="next">
-          <span class="pn-label">Next &rarr;</span>
-          <span class="pn-title">Home</span>
-        </a>
-      </nav>
-    </article>
-  </main>
-  <script type="module" src="/assets/js/data.js"></script>
-  <script type="module" src="/assets/js/layout.js"></script>
-
+    <nav class="doc-prev-next" aria-label="Pagination"><a href="faq.php"><span class="pn-label">&larr; Previous</span><span class="pn-title">FAQ</span></a></nav>
+  </article>
+</main>
+<script type="module" src="/assets/js/data.js"></script>
+<script type="module" src="/assets/js/layout.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <?php require __DIR__ . '/layout/footer.php'; ?>
 </body>
 </html>

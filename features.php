@@ -134,7 +134,16 @@ require __DIR__ . '/layout/search.php';
         </div>
       </div>
 
-      <h2 id="ads">Ads</h2>
+      <h2 id="teachers">Teachers</h2>
+<p>Skoolyst Teachers is designed around the teacher-school connection. Teachers can maintain a professional online profile containing qualifications, experience, skills and achievements, update it when needed and share a single profile link with schools and recruiters.</p>
+<ul>
+<li>Online professional teacher profile</li>
+<li>Education, experience, skills and achievements</li>
+<li>Shareable profile link</li>
+<li>Searchable teacher directory and hiring-focused filters as the platform develops</li>
+</ul>
+
+<h2 id="ads">Ads</h2>
       <div class="card-base">
         <div class="feature-item">
           <div class="feature-info"><div class="feature-name">Classified Listings</div><div class="feature-desc">Post and browse educational service advertisements.</div></div>

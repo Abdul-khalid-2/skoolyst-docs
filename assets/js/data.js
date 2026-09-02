@@ -6,6 +6,7 @@ const NAV = {
   main: [
     { label: 'Documentation', href: 'index.php' },
     { label: 'Getting Started', href: 'getting-started.php' },
+    { label: 'Why Skoolyst?', href: 'why-skoolyst.php' },
     { label: 'Overview', href: 'overview.php' },
     { label: 'Products', href: 'products.php' },
     { label: 'Guides', href: 'guides.php' },
@@ -14,7 +15,7 @@ const NAV = {
     { label: 'Release Notes', href: 'release-notes.php' },
     { label: 'News', href: 'news.php' },
     { label: 'FAQ', href: 'faq.php' },
-    { label: 'API', href: 'developers.php' },
+    // { label: 'API', href: 'developers.php' },
     { label: 'About', href: 'about.php' },
   ],
   sidebar: [
@@ -22,6 +23,7 @@ const NAV = {
       heading: 'Getting Started',
       items: [
         { label: 'Introduction', href: 'getting-started.php' },
+        { label: 'Why Skoolyst?', href: 'why-skoolyst.php' },
         { label: 'What is Skoolyst?', href: 'overview.php' },
         { label: 'Product Ecosystem', href: 'products.php' },
       ],
@@ -95,8 +97,9 @@ const PRODUCTS = [
 const SEARCH_INDEX = [
   { title: 'Skoolyst Documentation', desc: 'Official guides, platform documentation and ecosystem overview.', url: 'index.php' },
   { title: 'Getting Started', desc: 'Beginner-friendly guide to understanding the Skoolyst ecosystem.', url: 'getting-started.php' },
-  { title: 'Skoolyst Overview', desc: 'What Skoolyst is, its vision, mission and ecosystem concept.', url: 'overview.php' },
-  { title: 'Product Ecosystem', desc: 'Overview of all Skoolyst products and their current status.', url: 'products.php' },
+  { title: 'Why Skoolyst?', desc: 'The story behind Skoolyst, the education problems it aims to solve and how the ecosystem helps.', url: 'why-skoolyst.php' },
+  { title: 'Skoolyst Overview', desc: 'What Skoolyst is, who it serves, its vision, mission and ecosystem concept.', url: 'overview.php' },
+  { title: 'Product Ecosystem', desc: 'Overview of Skoolyst products, their purpose and planned architecture.', url: 'products.php' },
   { title: 'Guides', desc: 'Documentation guides organized by category and product.', url: 'guides.php' },
   { title: 'Features', desc: 'Feature documentation organized by product with status badges.', url: 'features.php' },
   { title: 'Versions', desc: 'Version history and development status of Skoolyst releases.', url: 'versions.php' },
@@ -108,6 +111,7 @@ const SEARCH_INDEX = [
   { title: 'Guide: Schools Listing', desc: 'How to use the Schools listing module in Skoolyst.', url: 'docs/guide-schools.php' },
   { title: 'Guide: Stores Module', desc: 'How to use the Stores module in Skoolyst.', url: 'docs/guide-stores.php' },
   { title: 'Guide: Media Module', desc: 'How to use the Media module in Skoolyst.', url: 'docs/guide-media.php' },
+  { title: 'Guide: Teachers', desc: 'Teacher profiles, professional information and the planned school-teacher connection workflow.', url: 'docs/guide-teachers.php' },
   { title: 'Guide: MCQs Module', desc: 'How to use the MCQs module in Skoolyst.', url: 'docs/guide-mcqs.php' },
 ];
 

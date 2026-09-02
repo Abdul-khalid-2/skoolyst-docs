@@ -4,6 +4,7 @@ $currentPage = basename($_SERVER['PHP_SELF'] ?? 'index.php');
 $sidebarSections = [
     ['heading' => 'Getting Started', 'items' => [
         ['label' => 'Introduction', 'href' => 'getting-started.php'],
+        ['label' => 'Why Skoolyst?', 'href' => 'why-skoolyst.php'],
         ['label' => 'What is Skoolyst?', 'href' => 'overview.php'],
         ['label' => 'Product Ecosystem', 'href' => 'products.php'],
     ]],
