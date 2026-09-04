@@ -144,14 +144,35 @@ require __DIR__ . '/layout/search.php';
 </ul>
 
 <h2 id="ads">Ads</h2>
+      <p>Skoolyst Ads is deployed and documented in full in the <a href="docs/guide-ads.php">Skoolyst Ads guide</a>.</p>
       <div class="card-base">
         <div class="feature-item">
-          <div class="feature-info"><div class="feature-name">Classified Listings</div><div class="feature-desc">Post and browse educational service advertisements.</div></div>
-          <span class="status-badge status-coming-soon">Coming Soon</span>
+          <div class="feature-info"><div class="feature-name">Ad Submission</div><div class="feature-desc">Advertisers submit ads with an image, description, call-to-action and click URL, targeting a connected app's placement(s).</div></div>
+          <span class="status-badge status-available">Available</span>
         </div>
         <div class="feature-item">
-          <div class="feature-info"><div class="feature-name">Ad Categories</div><div class="feature-desc">Categorized advertising for tutoring, courses and services.</div></div>
-          <span class="status-badge status-planned">Planned</span>
+          <div class="feature-info"><div class="feature-name">Multi-Placement Targeting</div><div class="feature-desc">One ad can run on one, several, or all of a connected app's placements at once.</div></div>
+          <span class="status-badge status-available">Available</span>
+        </div>
+        <div class="feature-item">
+          <div class="feature-info"><div class="feature-name">Admin Moderation</div><div class="feature-desc">Approve, reject, pause and reactivate ads, with every action recorded in an audit log.</div></div>
+          <span class="status-badge status-available">Available</span>
+        </div>
+        <div class="feature-item">
+          <div class="feature-info"><div class="feature-name">Connected Apps &amp; Placements</div><div class="feature-desc">Register apps with their own API key, and define each app's own placement codes.</div></div>
+          <span class="status-badge status-available">Available</span>
+        </div>
+        <div class="feature-item">
+          <div class="feature-info"><div class="feature-name">Scheduling</div><div class="feature-desc">Optional start/end dates so an ad only runs within a set window.</div></div>
+          <span class="status-badge status-available">Available</span>
+        </div>
+        <div class="feature-item">
+          <div class="feature-info"><div class="feature-name">Click &amp; Impression Tracking</div><div class="feature-desc">Per-ad, per-day performance stats for advertisers and admins.</div></div>
+          <span class="status-badge status-available">Available</span>
+        </div>
+        <div class="feature-item">
+          <div class="feature-info"><div class="feature-name">Ads API</div><div class="feature-desc">Public endpoint connected apps call to request and display an eligible ad for a placement.</div></div>
+          <span class="status-badge status-available">Available</span>
         </div>
       </div>
 

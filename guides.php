@@ -111,6 +111,18 @@ require __DIR__ . '/layout/search.php';
         </div>
       </div>
 
+      <h2 id="ads">Ads</h2>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <a href="docs/guide-ads.php" class="card-base guide-card">
+            <span class="guide-category">Ads</span>
+            <h3 class="guide-title">Skoolyst Ads</h3>
+            <p class="guide-desc">How the advertising engine works — placements, ad moderation and the API connected apps use.</p>
+            <span class="guide-arrow">Read guide &rarr;</span>
+          </a>
+        </div>
+      </div>
+
       <h2 id="accounts">Accounts</h2>
       <div class="row g-3">
         <div class="col-md-6">

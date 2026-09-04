@@ -52,7 +52,7 @@ require __DIR__ . '/layout/search.php';
             <tr><td><strong>Skoolyst</strong></td><td>Core platform</td><td>Complete — fixes in progress</td><td>Schools, Shops, Blogs, Videos and MCQs</td></tr>
             <tr><td><strong>Skoolyst Teachers</strong></td><td>v1</td><td>Deployed</td><td>Teacher profiles, listings and professional online profiles</td></tr>
             <tr><td><strong>Skoolyst Docs</strong></td><td>Current documentation build</td><td>Available &amp; continuously updated</td><td>Official documentation and knowledge base</td></tr>
-            <tr><td><strong>Skoolyst Ads</strong></td><td>Integration stage</td><td>Developed / integrating</td><td>Central advertising engine and API for Skoolyst applications</td></tr>
+            <tr><td><strong>Skoolyst Ads</strong></td><td>v1</td><td>Deployed</td><td>Central advertising engine and API for Skoolyst applications</td></tr>
           </tbody>
         </table>
       </div>
@@ -88,24 +88,28 @@ require __DIR__ . '/layout/search.php';
       <p><strong>Website:</strong> <a href="https://docs.skoolyst.com">docs.skoolyst.com</a></p>
       <p>Skoolyst Docs is the central documentation website for the application family. It explains the product vision, modules, features, guides, integrations, versions and development information.</p>
 
-      <h2 id="ads">Skoolyst Ads</h2>
-      <p>Skoolyst Ads is designed as a centralized advertising engine for the Skoolyst ecosystem. Advertisers and administrators can manage advertisements while connected applications request advertisements through an API.</p>
+      <h2 id="ads">Skoolyst Ads — v1</h2>
+      <p><strong>Website:</strong> <a href="https://ads.skoolyst.com">ads.skoolyst.com</a></p>
+      <p>Skoolyst Ads is a centralized advertising engine for the Skoolyst ecosystem, currently on its first tracked release (v1). Advertisers and administrators manage advertisements while connected applications request advertisements through an API. See the <a href="docs/guide-ads.php">Skoolyst Ads guide</a> for the full walkthrough.</p>
       <h3>Advertisement management</h3>
       <ul>
-        <li>Create advertisements</li>
-        <li>Edit and update advertisements</li>
-        <li>Delete advertisements</li>
+        <li>Create advertisements, with an image, description, call-to-action text and click URL</li>
+        <li>Edit and update advertisements (an edit resets the ad back to pending for re-review)</li>
+        <li>Delete advertisements (soft delete — moderation history is preserved)</li>
         <li>Pause and resume advertisements</li>
+        <li>Optional start/end date scheduling</li>
+        <li>Admin approval/rejection workflow, with every action recorded in an audit log</li>
         <li>Manage advertisers and admin access</li>
-        <li>Create and manage placements</li>
+        <li>Create and manage placements per connected app</li>
+        <li>Target one, several, or all of a connected app's placements from a single ad</li>
+        <li>Per-ad click and impression tracking</li>
       </ul>
       <h3>Application placements</h3>
-      <p>A placement identifies where an advertisement can be displayed, for example:</p>
-      <pre><code>skoolyst.com
-teachers.skoolyst.com
-blog.skoolyst.com
-other Skoolyst applications</code></pre>
-      <p>Each registered placement can use an API token to communicate with Skoolyst Ads. This allows multiple Skoolyst applications to share one advertising infrastructure instead of building separate ad-management systems for every application.</p>
+      <p>A placement identifies where an advertisement can be displayed. Each connected app defines its own placements independently — for example an app might register:</p>
+      <pre><code>header
+footer
+sidebar</code></pre>
+      <p>Each connected app authenticates with its own API key. This allows multiple Skoolyst applications — <code>teachers.skoolyst.com</code>, <code>blog.skoolyst.com</code> and others — to share one advertising infrastructure instead of building separate ad-management systems for every application. See the <a href="developers.php#ads-api">Ads API reference</a> for the exact request/response contract connected apps use.</p>
 
       <h2 id="versioning">Versioning Approach</h2>
       <p>Product versions should describe real release stages rather than placeholder versions. For applications with formal releases, Skoolyst can use <code>MAJOR.MINOR.PATCH</code> semantic versioning.</p>
@@ -121,7 +125,7 @@ other Skoolyst applications</code></pre>
         <li>Fix and stabilize the completed Skoolyst modules.</li>
         <li>Continue improving the deployed Skoolyst Teachers v1 experience.</li>
         <li>Maintain and expand the documentation as products evolve.</li>
-        <li>Continue integrating Skoolyst Ads with Skoolyst properties.</li>
+        <li>Continue integrating and expanding Skoolyst Ads across more Skoolyst properties.</li>
         <li>Document future releases and changes when they become actual releases.</li>
       </ul>
 

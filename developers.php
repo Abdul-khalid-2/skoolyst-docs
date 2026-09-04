@@ -48,12 +48,50 @@ require __DIR__ . '/layout/search.php';
           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
         </div>
         <h2>Documentation Being Prepared</h2>
-        <p>Developer API documentation is currently being prepared. Real API endpoints, authentication flows and integration guides will be added here once the Skoolyst API is available.</p>
-        <p>No API endpoints are available at this time. This page is structured so real documentation can be added later.</p>
+        <p>Full developer API documentation for the Skoolyst platform is still being prepared. One real, live API is already documented below — <a href="#ads-api">Skoolyst Ads</a> — and more endpoints will be added here as other Skoolyst applications expose their own APIs.</p>
       </div>
 
+      <h2 id="ads-api">Skoolyst Ads API</h2>
+      <p>Skoolyst Ads (<a href="https://ads.skoolyst.com">ads.skoolyst.com</a>) is the first Skoolyst application with a real, public API. It lets a connected app request an eligible ad for one of its own placements. Full guide: <a href="../docs/guide-ads.php">Skoolyst Ads</a>.</p>
+      <pre><code># Get an ad for a placement
+
+## Description
+Returns one eligible ad for the requesting app's given placement, or
+null if nothing currently qualifies.
+
+## Request
+- Method: GET
+- URL: /api/v1/ads/serve
+- Headers: Authorization: Bearer &lt;connected-app-api-key&gt;
+- Query: placement=&lt;placement-code&gt;
+
+## Response
+Status: 200 OK
+Content-Type: application/json
+
+{
+  "success": true,
+  "data": {
+    "ad": {
+      "id": 1,
+      "title": "Speak Confidently in 8 Weeks",
+      "description": "Small group classes",
+      "image_path": "/uploads/ads/example.jpg",
+      "cta_text": "Book Now",
+      "click_url": "https://example.com/enroll"
+    }
+  }
+}
+
+## Errors
+| Status | Description                   |
+|--------|--------------------------------|
+| 401    | Missing or invalid API key    |
+| 404    | Unknown app or placement code |</code></pre>
+      <p>Every connected app authenticates with its own API key, generated and, if needed, regenerated from Admin → Connected Apps. There is no shared/global key — one app's key can be revoked without affecting any other app's integration.</p>
+
       <h2 id="planned-documentation">Planned Documentation Sections</h2>
-      <p>The following sections will be documented as the Skoolyst API is developed:</p>
+      <p>The following sections will be documented as more of the Skoolyst API is developed:</p>
 
       <div class="row g-3 mt-2">
         <div class="col-md-6 col-lg-4">
@@ -145,7 +183,7 @@ Content-Type: application/json
 | 401    | unauthorized | Authentication failed |
 | 404    | not_found    | Resource not found    |</code></pre>
 
-      <p class="placeholder-notice">This template is for illustration only. No real endpoints exist yet.</p>
+      <p class="placeholder-notice">This template is for illustration only, beyond the real Skoolyst Ads API documented above.</p>
 
       <nav class="doc-prev-next" aria-label="Pagination">
         <a href="faq.php">

@@ -54,6 +54,44 @@ require __DIR__ . '/layout/search.php';
 
       <h2 id="latest-updates">Latest Updates</h2>
 
+      <div class="release-entry" id="ads">
+        <div class="release-header">
+          <h3 class="release-version">Skoolyst Ads — v1.0</h3>
+          <span class="status-badge status-available">Released</span>
+          <span class="release-meta">Deployed at ads.skoolyst.com</span>
+        </div>
+        <div class="release-section added">
+          <h4>Added</h4>
+          <ul>
+            <li>Advertiser and admin accounts with role-based access</li>
+            <li>Ad creation with image, description, call-to-action text, click URL and optional start/end date scheduling</li>
+            <li>Ad editing, pausing/resuming and soft delete</li>
+            <li>Admin moderation workflow — approve, reject, pause, reactivate — with every action recorded in an audit log</li>
+            <li>Connected app management with per-app API keys</li>
+            <li>Placement management, scoped per connected app</li>
+            <li>Multi-placement ad targeting — one ad can run on several of an app's placements at once</li>
+            <li>Click and impression tracking, per ad and per day</li>
+            <li>Public <code>GET /ads/serve</code> API for connected apps to request an eligible ad</li>
+          </ul>
+        </div>
+        <div class="release-section changed">
+          <h4>Changed</h4>
+          <ul><li>Not applicable — this is the initial tracked release.</li></ul>
+        </div>
+        <div class="release-section fixed">
+          <h4>Fixed</h4>
+          <ul><li>Not applicable — this is the initial tracked release.</li></ul>
+        </div>
+        <div class="release-section removed">
+          <h4>Removed</h4>
+          <ul><li>Not applicable — this is the initial tracked release.</li></ul>
+        </div>
+        <div class="release-section known-issues">
+          <h4>Known Issues</h4>
+          <ul><li>None currently tracked. Future bug fixes and updates will be added here as new dated entries.</li></ul>
+        </div>
+      </div>
+
       <div class="release-entry">
         <div class="release-header">
           <h3 class="release-version">v0.2</h3>

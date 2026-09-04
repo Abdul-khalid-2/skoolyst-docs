@@ -38,6 +38,7 @@ $mainNav = [
         <select id="version-select" aria-label="Documentation version">
           <option value="latest">Current</option>
           <option value="teachers-v1">Teachers v1</option>
+          <option value="ads-v1">Ads v1</option>
         </select>
       </div>
       <button class="search-trigger" id="search-trigger" aria-label="Search documentation">

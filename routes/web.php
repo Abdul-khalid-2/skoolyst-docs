@@ -23,4 +23,5 @@ return [
     '/docs/guide-stores' => 'docs/guide-stores.php',
     '/docs/guide-media' => 'docs/guide-media.php',
     '/docs/guide-mcqs' => 'docs/guide-mcqs.php',
+    '/docs/guide-ads' => 'docs/guide-ads.php',
 ];

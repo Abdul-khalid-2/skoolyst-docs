@@ -190,8 +190,9 @@ require __DIR__ . '/layout/search.php';
               </div>
               <h3 class="product-name">Ads</h3>
               <span class="product-subdomain">ads.skoolyst.com</span>
-              <p class="product-desc">Classified advertising platform for educational services and resources.</p>
-              <span class="status-badge status-coming-soon">Coming Soon</span>
+              <p class="product-desc">Centralized advertising engine — advertisers submit ads, admins moderate, connected apps request and display them via API.</p>
+              <span class="status-badge status-available">Available — v1</span>
+              <p class="mt-2 mb-0"><a href="docs/guide-ads.php">Read the guide &rarr;</a></p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">

@@ -29,10 +29,11 @@
     "@type": "FAQPage",
     "mainEntity": [
       {"@type":"Question","name":"What is Skoolyst?","acceptedAnswer":{"@type":"Answer","text":"Skoolyst is an educational technology ecosystem designed to make education-related discovery, connection, learning and information sharing more organized for parents, schools, teachers, students and education businesses."}},
-      {"@type":"Question","name":"What products are part of Skoolyst?","acceptedAnswer":{"@type":"Answer","text":"The main Skoolyst application contains Schools Listing, Stores, Media and MCQs. Planned separate applications include Ads, Blogs, MCQs, Stores and Media under their own subdomains."}},
-      {"@type":"Question","name":"Are all Skoolyst products separate applications?","acceptedAnswer":{"@type":"Answer","text":"No. Currently, Schools, Stores, Media and MCQs exist as modules within the main Skoolyst application. Separate subdomains represent the planned future architecture."}},
-      {"@type":"Question","name":"What is currently available?","acceptedAnswer":{"@type":"Answer","text":"The main Skoolyst application is currently in development with its core modules: Schools Listing, Stores, Media and MCQs."}},
-      {"@type":"Question","name":"Which products are coming soon?","acceptedAnswer":{"@type":"Answer","text":"Ads (ads.skoolyst.com), Blogs (blogs.skoolyst.com), MCQs (mcqs.skoolyst.com), Stores (stores.skoolyst.com) and Media (media.skoolyst.com) are all planned as separate applications with Coming Soon status."}}
+      {"@type":"Question","name":"What products are part of Skoolyst?","acceptedAnswer":{"@type":"Answer","text":"The main Skoolyst application contains Schools Listing, Stores, Media and MCQs. Skoolyst Ads is already a separate, deployed application. Planned separate applications include Blogs, MCQs, Stores and Media under their own subdomains."}},
+      {"@type":"Question","name":"Are all Skoolyst products separate applications?","acceptedAnswer":{"@type":"Answer","text":"No. Currently, Schools, Stores, Media and MCQs exist as modules within the main Skoolyst application. Skoolyst Ads and Skoolyst Teachers are already deployed as separate applications. Other separate subdomains represent the planned future architecture."}},
+      {"@type":"Question","name":"What is currently available?","acceptedAnswer":{"@type":"Answer","text":"The main Skoolyst application is currently in development with its core modules: Schools Listing, Stores, Media and MCQs. Skoolyst Ads (ads.skoolyst.com) and Skoolyst Teachers (teachers.skoolyst.com) are already deployed separate applications."}},
+      {"@type":"Question","name":"Which products are coming soon?","acceptedAnswer":{"@type":"Answer","text":"Blogs (blogs.skoolyst.com), MCQs (mcqs.skoolyst.com), Stores (stores.skoolyst.com) and Media (media.skoolyst.com) are all planned as separate applications with Coming Soon status."}},
+      {"@type":"Question","name":"What is Skoolyst Ads?","acceptedAnswer":{"@type":"Answer","text":"Skoolyst Ads is a deployed, centralized advertising engine at ads.skoolyst.com. Advertisers submit ads targeting a connected app's placements, an admin reviews and approves them, and connected Skoolyst applications request and display approved ads through a shared API."}}
     ]
   }
   </script>
@@ -78,7 +79,7 @@ require __DIR__ . '/layout/search.php';
           </h2>
           <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
             <div class="accordion-body">
-              <p>The main Skoolyst application currently contains four modules: Schools Listing, Stores, Media and MCQs. Additionally, several separate applications are planned: Ads, Blogs, and independent versions of MCQs, Stores and Media under their own subdomains.</p>
+              <p>The main Skoolyst application currently contains four modules: Schools Listing, Stores, Media and MCQs. Skoolyst Ads is already a separate, deployed application. Additionally, several more separate applications are planned: Blogs, and independent versions of MCQs, Stores and Media under their own subdomains.</p>
             </div>
           </div>
         </div>
@@ -119,12 +120,12 @@ require __DIR__ . '/layout/search.php';
             <div class="accordion-body">
               <p>The following products are planned as separate applications with "Coming Soon" status:</p>
               <ul>
-                <li><strong>Ads</strong> — <code>ads.skoolyst.com</code></li>
                 <li><strong>Blogs</strong> — <code>blogs.skoolyst.com</code></li>
                 <li><strong>MCQs</strong> — <code>mcqs.skoolyst.com</code> (Planned / Coming Soon)</li>
                 <li><strong>Stores</strong> — <code>stores.skoolyst.com</code> (Planned / Coming Soon)</li>
                 <li><strong>Media</strong> — <code>media.skoolyst.com</code> (Planned / Coming Soon)</li>
               </ul>
+              <p>Skoolyst Ads (<code>ads.skoolyst.com</code>) is no longer in this category — it is already a deployed, separate application. See <a href="docs/guide-ads.php">the Skoolyst Ads guide</a>.</p>
             </div>
           </div>
         </div>
@@ -195,6 +196,10 @@ require __DIR__ . '/layout/search.php';
         <div class="accordion-item">
           <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq13">What can people use Skoolyst Blogs for?</button></h2>
           <div id="faq13" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body"><p>Blogs is intended for education-focused articles, awareness, experiences and practical ideas about schools, parenting, teaching, students and education systems.</p></div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq14">What is Skoolyst Ads?</button></h2>
+          <div id="faq14" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body"><p>Skoolyst Ads (<a href="https://ads.skoolyst.com">ads.skoolyst.com</a>) is a deployed, centralized advertising engine. Advertisers submit ads targeting one or more of a connected app's placements, an admin reviews and approves them, and connected Skoolyst applications request and display approved ads through a shared API, reporting clicks and impressions back. See the <a href="docs/guide-ads.php">Skoolyst Ads guide</a> for the full walkthrough.</p></div></div>
         </div>
       </div>
 

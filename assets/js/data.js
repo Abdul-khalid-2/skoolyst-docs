@@ -60,8 +60,8 @@ const PRODUCTS = [
   {
     name: 'Ads',
     subdomain: 'ads.skoolyst.com',
-    desc: 'Classified advertising platform for educational services and resources.',
-    status: 'coming-soon',
+    desc: 'Centralized advertising engine — advertisers submit ads, admins moderate, connected apps request and display them via API.',
+    status: 'available',
     icon: 'icon-bg-gold',
   },
   {
@@ -113,6 +113,7 @@ const SEARCH_INDEX = [
   { title: 'Guide: Media Module', desc: 'How to use the Media module in Skoolyst.', url: 'docs/guide-media.php' },
   { title: 'Guide: Teachers', desc: 'Teacher profiles, professional information and the planned school-teacher connection workflow.', url: 'docs/guide-teachers.php' },
   { title: 'Guide: MCQs Module', desc: 'How to use the MCQs module in Skoolyst.', url: 'docs/guide-mcqs.php' },
+  { title: 'Guide: Skoolyst Ads', desc: 'How the advertising engine works — connected apps, placements, ad moderation and the API.', url: 'docs/guide-ads.php' },
 ];
 
 if (typeof window !== 'undefined') {

@@ -76,10 +76,12 @@ require __DIR__ . '/layout/search.php';
       <h2 id="mcqs">MCQs</h2>
       <p>The MCQs module provides multiple-choice question practice and assessment tools. It is currently integrated into the main application, with a separate <code>mcqs.skoolyst.com</code> subdomain planned. See the <a href="docs/guide-mcqs.php">MCQs guide</a> for more.</p>
 
+      <h2 id="ads">Ads</h2>
+      <p>Unlike the modules above, Skoolyst Ads (<code>ads.skoolyst.com</code>) is already a separate, deployed application — the centralized advertising engine that lets advertisers submit ads and connected Skoolyst apps request and display them through a shared API. See the <a href="docs/guide-ads.php">Skoolyst Ads guide</a> for the full walkthrough.</p>
+
       <h2 id="future-applications">Future Applications</h2>
       <p>Several additional applications are planned as separate subdomains:</p>
       <ul>
-        <li><strong>Ads</strong> (<code>ads.skoolyst.com</code>) — Coming Soon</li>
         <li><strong>Blogs</strong> (<code>blogs.skoolyst.com</code>) — Coming Soon</li>
         <li><strong>MCQs</strong> (<code>mcqs.skoolyst.com</code>) — Planned / Coming Soon</li>
         <li><strong>Stores</strong> (<code>stores.skoolyst.com</code>) — Planned / Coming Soon</li>
