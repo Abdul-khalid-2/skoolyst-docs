@@ -1,5 +1,6 @@
 <?php
 // Static PHP view. Backend logic can be introduced later without changing the page structure.
+require __DIR__ . '/../config/config.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -44,6 +45,11 @@ require __DIR__ . '/../layout/search.php';
 
       <h1>Media Module</h1>
       <p class="lead">The Media module serves as an educational media hub for videos, audio and visual learning content within the Skoolyst platform.</p>
+
+      <?php
+        $adPlacementCode = ADS_PLACEMENT_DOC_GUIDE;
+        require __DIR__ . '/../includes/ad-slot.php';
+      ?>
 
       <h2 id="overview">Overview</h2>
       <p>The Media module is one of the four core modules within the main Skoolyst application. It is designed to host and organize educational media content, making it accessible to students, teachers and parents.</p>

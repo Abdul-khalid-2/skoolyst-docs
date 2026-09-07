@@ -18,6 +18,7 @@ return [
     '/faq' => 'faq.php',
     '/developers' => 'developers.php',
     '/about' => 'about.php',
+    '/ads-track' => 'ads-track.php',
 
     '/docs/guide-schools' => 'docs/guide-schools.php',
     '/docs/guide-stores' => 'docs/guide-stores.php',

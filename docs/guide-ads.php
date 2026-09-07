@@ -1,5 +1,6 @@
 <?php
 // Static PHP view. Backend logic can be introduced later without changing the page structure.
+require __DIR__ . '/../config/config.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -44,6 +45,11 @@ require __DIR__ . '/../layout/search.php';
 
       <h1>Skoolyst Ads</h1>
       <p class="lead">Skoolyst Ads is the centralized advertising engine for the Skoolyst ecosystem. Advertisers submit ads, an admin reviews them, and any connected Skoolyst application can request and display approved ads for its own placements through one shared API.</p>
+
+      <?php
+        $adPlacementCode = ADS_PLACEMENT_DOC_GUIDE;
+        require __DIR__ . '/../includes/ad-slot.php';
+      ?>
       <p><span class="status-badge status-available">Available — v1</span></p>
 
       <div class="info-banner">

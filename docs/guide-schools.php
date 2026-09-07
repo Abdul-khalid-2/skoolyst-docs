@@ -1,5 +1,6 @@
 <?php
 // Static PHP view. Backend logic can be introduced later without changing the page structure.
+require __DIR__ . '/../config/config.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -44,6 +45,11 @@ require __DIR__ . '/../layout/search.php';
 
       <h1>Schools Listing Module</h1>
       <p class="lead">The Schools module provides a directory of educational institutions within the Skoolyst platform.</p>
+
+      <?php
+        $adPlacementCode = ADS_PLACEMENT_DOC_GUIDE;
+        require __DIR__ . '/../includes/ad-slot.php';
+      ?>
 
       <h2 id="overview">Overview</h2>
       <p>The Schools Listing module is one of the four core modules within the main Skoolyst application. It is designed to help users discover and explore educational institutions through a searchable, categorized directory.</p>

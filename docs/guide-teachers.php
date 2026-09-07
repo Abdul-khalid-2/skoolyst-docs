@@ -1,5 +1,6 @@
 <?php
 // Static PHP documentation view.
+require __DIR__ . '/../config/config.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -34,6 +35,11 @@ require __DIR__ . '/layout/search.php';
     </nav>
     <h1>Guide: Skoolyst Teachers</h1>
 <p class="lead">Understand the purpose of the teacher profile product and how it is intended to improve the connection between teachers, schools and recruiters.</p>
+
+      <?php
+        $adPlacementCode = ADS_PLACEMENT_DOC_GUIDE;
+        require __DIR__ . '/../includes/ad-slot.php';
+      ?>
 
 <div class="info-banner"><span class="info-icon">i</span><div class="info-content"><p><strong>Status:</strong> The teacher product is under development/planning. The workflow below documents the intended experience and should not be treated as a statement that every feature is already live.</p></div></div>
 

@@ -1,5 +1,6 @@
 <?php
 // Static PHP view. Backend logic can be introduced later without changing the page structure.
+require __DIR__ . '/../config/config.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -44,6 +45,11 @@ require __DIR__ . '/../layout/search.php';
 
       <h1>MCQs Module</h1>
       <p class="lead">The MCQs module provides multiple-choice question practice and assessment tools within the Skoolyst platform.</p>
+
+      <?php
+        $adPlacementCode = ADS_PLACEMENT_DOC_GUIDE;
+        require __DIR__ . '/../includes/ad-slot.php';
+      ?>
 
       <h2 id="overview">Overview</h2>
       <p>The MCQs module is one of the four core modules within the main Skoolyst application. It is designed to provide a library of multiple-choice questions for practice and assessment, helping students prepare for exams and teachers evaluate understanding.</p>

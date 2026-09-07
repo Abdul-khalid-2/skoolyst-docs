@@ -1,5 +1,6 @@
 <?php
 // Static PHP entry page. No backend logic is required at this stage.
+require __DIR__ . '/config/config.php';
 ?>
 <!doctype html>
 <html lang="en">
@@ -64,6 +65,14 @@ require __DIR__ . '/layout/search.php';
           <input type="text" id="hero-search-input" placeholder="Search documentation..." aria-label="Search documentation" />
         </div>
       </div>
+    </section>
+
+    <!-- Ad slot -->
+    <section class="home-content">
+      <?php
+        $adPlacementCode = ADS_PLACEMENT_HOME_TOP;
+        require __DIR__ . '/includes/ad-slot.php';
+      ?>
     </section>
 
     <!-- Quick Links -->
