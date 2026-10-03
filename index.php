@@ -6,7 +6,7 @@ require __DIR__ . '/config/config.php';
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/assets/icons/favicon.svg" />
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skoolyst Documentation | Official Guides &amp; Platform Documentation</title>
   <meta name="description" content="Official Skoolyst documentation portal. Explore products, features, guides, updates, versions and future services for the Skoolyst educational technology ecosystem." />
@@ -24,7 +24,7 @@ require __DIR__ . '/config/config.php';
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="/assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -332,8 +332,8 @@ require __DIR__ . '/layout/search.php';
     </section>
   </main>
 
-  <script type="module" src="/assets/js/data.js"></script>
-  <script type="module" src="/assets/js/layout.js"></script>
+  <script type="module" src="assets/js/data.js"></script>
+  <script type="module" src="assets/js/layout.js"></script>
 
 <?php require __DIR__ . '/layout/footer.php'; ?>
 </body>
