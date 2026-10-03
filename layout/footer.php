@@ -1,4 +1,8 @@
-<?php $layoutBase = str_contains(str_replace('\\', '/', $_SERVER['PHP_SELF'] ?? ''), '/docs/') ? '../' : ''; ?>
+<?php
+$layoutBase = str_contains(str_replace('\\', '/', $_SERVER['PHP_SELF'] ?? ''), '/docs/') ? '../' : '';
+require __DIR__ . '/scripts.php';
+require __DIR__ . '/skoolyst-apps.php';
+?>
 <footer class="site-footer" role="contentinfo">
   <div class="footer-inner">
     <div class="footer-grid">

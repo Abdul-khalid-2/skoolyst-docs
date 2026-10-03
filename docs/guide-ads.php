@@ -5,9 +5,7 @@ require __DIR__ . '/../config/config.php';
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <?php require __DIR__ . '/../layout/head.php'; ?>
   <title>Guide: Skoolyst Ads | Skoolyst Documentation</title>
   <meta name="description" content="How Skoolyst Ads works — the centralized advertising engine that lets advertisers submit ads and connected Skoolyst apps request and display them through a shared API." />
   <link rel="canonical" href="https://docs.skoolyst.com/docs/guide-ads.php" />
@@ -19,18 +17,11 @@ require __DIR__ . '/../config/config.php';
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Guide: Skoolyst Ads | Skoolyst Documentation" />
   <meta name="twitter:description" content="How Skoolyst Ads works — advertisers, admin moderation, placements and the API connected apps use to request ads." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 <body>
 <?php
 $isHomePage = false;
-require __DIR__ . '/../layout/header.php';
-require __DIR__ . '/../layout/sidebar.php';
-require __DIR__ . '/../layout/search.php';
+require __DIR__ . '/../layout/page-start.php';
 ?>
 
   <main id="main-content">
@@ -205,8 +196,6 @@ If nothing is eligible, "ad" is null rather than the request failing.
       </nav>
     </article>
   </main>
-  <script type="module" src="assets/js/data.js"></script>
-  <script type="module" src="assets/js/layout.js"></script>
 
 <?php require __DIR__ . '/../layout/footer.php'; ?>
 </body>
