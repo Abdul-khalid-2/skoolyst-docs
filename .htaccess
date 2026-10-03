@@ -4,12 +4,21 @@ DirectoryIndex index.php
 
 RewriteEngine On
 
-# Keep existing .php URLs working.
+# Clean URLs: /index.php -> / (301 for direct browser requests only).
+# THE_REQUEST is the client's original request line, so these never re-fire
+# on the internal rewrites below (which would loop).
+RewriteCond %{THE_REQUEST} \s((?:/[^?\s]*)?)/index\.php[\s?] [NC]
+RewriteRule ^ %1/ [R=301,L]
+
+# Clean URLs: /page.php -> /page (301 for direct browser requests only).
+RewriteCond %{THE_REQUEST} \s(/[^?\s]*)\.php[\s?] [NC]
+RewriteRule ^ %1 [R=301,QSA,L]
+
+# Keep existing files and directories working.
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# Extensionless routes -> matching PHP page.
-RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+# Clean URLs -> matching PHP page (address bar shows no .php).
+RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.+?)/?$ $1.php [L]
-

@@ -7,11 +7,11 @@
   <?php require __DIR__ . '/layout/head.php'; ?>
   <title>Versions & Product Status | Skoolyst Documentation</title>
   <meta name="description" content="Current versions, deployment status, and product status across the Skoolyst application ecosystem." />
-  <link rel="canonical" href="https://docs.skoolyst.com/versions.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/versions" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Versions & Product Status | Skoolyst Documentation" />
   <meta property="og:description" content="Current versions, deployment status, and product status across the Skoolyst ecosystem." />
-  <meta property="og:url" content="https://docs.skoolyst.com/versions.php" />
+  <meta property="og:url" content="https://docs.skoolyst.com/versions" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Versions & Product Status | Skoolyst Documentation" />
@@ -26,7 +26,7 @@ require __DIR__ . '/layout/page-start.php';
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="index.php">Home</a>
+        <a href="./">Home</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">Versions</span>
       </nav>
@@ -81,7 +81,7 @@ require __DIR__ . '/layout/page-start.php';
 
       <h2 id="ads">Skoolyst Ads — v1</h2>
       <p><strong>Website:</strong> <a href="https://ads.skoolyst.com">ads.skoolyst.com</a></p>
-      <p>Skoolyst Ads is a centralized advertising engine for the Skoolyst ecosystem, currently on its first tracked release (v1). Advertisers and administrators manage advertisements while connected applications request advertisements through an API. See the <a href="docs/guide-ads.php">Skoolyst Ads guide</a> for the full walkthrough.</p>
+      <p>Skoolyst Ads is a centralized advertising engine for the Skoolyst ecosystem, currently on its first tracked release (v1). Advertisers and administrators manage advertisements while connected applications request advertisements through an API. See the <a href="docs/guide-ads">Skoolyst Ads guide</a> for the full walkthrough.</p>
       <h3>Advertisement management</h3>
       <ul>
         <li>Create advertisements, with an image, description, call-to-action text and click URL</li>
@@ -100,7 +100,7 @@ require __DIR__ . '/layout/page-start.php';
       <pre><code>header
 footer
 sidebar</code></pre>
-      <p>Each connected app authenticates with its own API key. This allows multiple Skoolyst applications — <code>teachers.skoolyst.com</code>, <code>blog.skoolyst.com</code> and others — to share one advertising infrastructure instead of building separate ad-management systems for every application. See the <a href="developers.php#ads-api">Ads API reference</a> for the exact request/response contract connected apps use.</p>
+      <p>Each connected app authenticates with its own API key. This allows multiple Skoolyst applications — <code>teachers.skoolyst.com</code>, <code>blog.skoolyst.com</code> and others — to share one advertising infrastructure instead of building separate ad-management systems for every application. See the <a href="developers#ads-api">Ads API reference</a> for the exact request/response contract connected apps use.</p>
 
       <h2 id="versioning">Versioning Approach</h2>
       <p>Product versions should describe real release stages rather than placeholder versions. For applications with formal releases, Skoolyst can use <code>MAJOR.MINOR.PATCH</code> semantic versioning.</p>
@@ -121,11 +121,11 @@ sidebar</code></pre>
       </ul>
 
       <nav class="doc-prev-next" aria-label="Pagination">
-        <a href="features.php">
+        <a href="features">
           <span class="pn-label">&larr; Previous</span>
           <span class="pn-title">Features</span>
         </a>
-        <a href="release-notes.php" class="next">
+        <a href="release-notes" class="next">
           <span class="pn-label">Next &rarr;</span>
           <span class="pn-title">Release Notes</span>
         </a>

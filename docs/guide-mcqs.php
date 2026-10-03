@@ -8,11 +8,11 @@ require __DIR__ . '/../config/config.php';
   <?php require __DIR__ . '/../layout/head.php'; ?>
   <title>MCQs Module Guide | Skoolyst Documentation</title>
   <meta name="description" content="How to use the MCQs module for practice and assessment within the Skoolyst application." />
-  <link rel="canonical" href="https://docs.skoolyst.com/docs/guide-mcqs.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/docs/guide-mcqs" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="MCQs Module Guide | Skoolyst Documentation" />
   <meta property="og:description" content="How to use the MCQs module within the Skoolyst application." />
-  <meta property="og:url" content="https://docs.skoolyst.com/docs/guide-mcqs.php" />
+  <meta property="og:url" content="https://docs.skoolyst.com/docs/guide-mcqs" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="MCQs Module Guide | Skoolyst Documentation" />
@@ -27,9 +27,9 @@ require __DIR__ . '/../layout/page-start.php';
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="../index.php">Home</a>
+        <a href="../">Home</a>
         <span class="breadcrumb-sep">/</span>
-        <a href="../guides.php">Guides</a>
+        <a href="../guides">Guides</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">MCQs</span>
       </nav>
@@ -67,17 +67,17 @@ require __DIR__ . '/../layout/page-start.php';
 
       <h2 id="related">Related Documentation</h2>
       <ul>
-        <li><a href="../getting-started.php">Getting Started</a></li>
-        <li><a href="../features.php#mcqs">MCQs Features</a></li>
-        <li><a href="../products.php">Product Ecosystem</a></li>
+        <li><a href="../getting-started">Getting Started</a></li>
+        <li><a href="../features#mcqs">MCQs Features</a></li>
+        <li><a href="../products">Product Ecosystem</a></li>
       </ul>
 
       <nav class="doc-prev-next" aria-label="Pagination">
-        <a href="guide-media.php">
+        <a href="guide-media">
           <span class="pn-label">&larr; Previous</span>
           <span class="pn-title">Media Module</span>
         </a>
-        <a href="../guides.php" class="next">
+        <a href="../guides" class="next">
           <span class="pn-label">Next &rarr;</span>
           <span class="pn-title">All Guides</span>
         </a>

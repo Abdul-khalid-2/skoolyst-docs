@@ -28,7 +28,7 @@ $sidebarSections = [
       <div class="sidebar-heading"><?= htmlspecialchars($section['heading']) ?></div>
       <ul class="sidebar-nav">
         <?php foreach ($section['items'] as $item): ?>
-          <li><a href="<?= $layoutBase . $item['href'] ?>" class="<?= $item['href'] === $currentPage ? 'active' : '' ?>"><?= htmlspecialchars($item['label']) ?></a></li>
+          <li><a href="<?= $layoutBase . preg_replace('/\.php$/', '', $item['href']) ?>" class="<?= $item['href'] === $currentPage ? 'active' : '' ?>"><?= htmlspecialchars($item['label']) ?></a></li>
         <?php endforeach; ?>
       </ul>
     </div>

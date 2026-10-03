@@ -1513,6 +1513,10 @@ body.is-home main#main-content { padding-top: var(--header-height); }
 }
 .skoolyst-app-name { font-weight: 600; font-size: 17px; color: var(--sk-text); margin-bottom: 4px; }
 .skoolyst-app-desc { color: var(--sk-muted); font-size: 13.5px; line-height: 1.55; }
+/* Sit beside the sidebar exactly like the footer does (see .site-footer). */
+.skoolyst-apps { margin-left: var(--sidebar-width); }
+body.is-home .skoolyst-apps { margin-left: 0; }
+@media (max-width: 991.98px) { .skoolyst-apps { margin-left: 0; } }
 @media (max-width: 860px) { .skoolyst-apps-grid li { flex-basis: calc((100% - 18px) / 2); } }
 @media (max-width: 560px) {
     .skoolyst-apps { padding: 36px 0; }

@@ -23,13 +23,13 @@ $mainNav = [
 <a href="#main-content" class="skip-link">Skip to main content</a>
 <header class="site-header" role="banner">
   <div class="header-inner">
-    <a href="<?= $layoutBase ?>index.php" class="logo-link" aria-label="Skoolyst Documentation Home">
+    <a href="<?= $layoutBase ?: "./" ?>" class="logo-link" aria-label="Skoolyst Documentation Home">
       <span class="logo-mark">S</span>
       <span class="logo-text">Skoolyst<span class="docs-label">Documentation</span></span>
     </a>
     <nav class="header-nav" aria-label="Primary">
       <?php foreach ($mainNav as $item): ?>
-        <a class="nav-link<?= $item['href'] === $currentPage ? ' active' : '' ?>" href="<?= $layoutBase . $item['href'] ?>"><?= htmlspecialchars($item['label']) ?></a>
+        <a class="nav-link<?= $item['href'] === $currentPage ? ' active' : '' ?>" href="<?= $item['href'] === 'index.php' ? ($layoutBase ?: './') : $layoutBase . preg_replace('/\.php$/', '', $item['href']) ?>"><?= htmlspecialchars($item['label']) ?></a>
       <?php endforeach; ?>
     </nav>
     <div class="header-actions">

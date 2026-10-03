@@ -7,7 +7,7 @@
   <?php require __DIR__ . '/layout/head.php'; ?>
   <title>Product Ecosystem | Skoolyst Documentation</title>
   <meta name="description" content="A precise overview of Skoolyst products, their purpose, current architecture and planned specialized applications." />
-  <link rel="canonical" href="https://docs.skoolyst.com/products.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/products" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Product Ecosystem | Skoolyst Documentation" />
   <meta property="og:description" content="A precise overview of Skoolyst products, their purpose, current architecture and planned specialized applications." />
@@ -21,7 +21,7 @@ require __DIR__ . '/layout/page-start.php';
 <main id="main-content">
   <article class="doc-article">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="index.php">Home</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">Products</span>
+      <a href="./">Home</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">Products</span>
     </nav>
     <h1>Product Ecosystem</h1>
 <p class="lead">Skoolyst is organized as a family of specialized educational products. Some capabilities begin as modules inside the main platform and can later evolve into independent applications.</p>
@@ -64,7 +64,7 @@ require __DIR__ . '/layout/page-start.php';
 <tr><td>Reach relevant education audiences</td><td>Skoolyst Ads</td></tr>
 </tbody></table>
 
-    <nav class="doc-prev-next" aria-label="Pagination"><a href="why-skoolyst.php"><span class="pn-label">&larr; Previous</span><span class="pn-title">Why Skoolyst?</span></a><a href="features.php" class="next"><span class="pn-label">Next &rarr;</span><span class="pn-title">Features</span></a></nav>
+    <nav class="doc-prev-next" aria-label="Pagination"><a href="why-skoolyst"><span class="pn-label">&larr; Previous</span><span class="pn-title">Why Skoolyst?</span></a><a href="features" class="next"><span class="pn-label">Next &rarr;</span><span class="pn-title">Features</span></a></nav>
   </article>
 </main>
 <?php require __DIR__ . '/layout/footer.php'; ?>

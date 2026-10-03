@@ -7,7 +7,7 @@
   <?php require __DIR__ . '/layout/head.php'; ?>
   <title>Why Skoolyst? | Skoolyst Documentation</title>
   <meta name="description" content="The story behind Skoolyst, the problems it aims to solve and how its ecosystem connects parents, schools, teachers, students and school-related services." />
-  <link rel="canonical" href="https://docs.skoolyst.com/why-skoolyst.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/why-skoolyst" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Why Skoolyst? | Skoolyst Documentation" />
   <meta property="og:description" content="The story behind Skoolyst, the problems it aims to solve and how its ecosystem connects parents, schools, teachers, students and school-related services." />
@@ -21,7 +21,7 @@ require __DIR__ . '/layout/page-start.php';
 <main id="main-content">
   <article class="doc-article">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="index.php">Home</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">Why Skoolyst?</span>
+      <a href="./">Home</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">Why Skoolyst?</span>
     </nav>
     <h1>Why Skoolyst?</h1>
 <p class="lead">Skoolyst started with a simple observation: finding the right school, connecting education providers with families, discovering teachers, learning resources and school-related services should not require scattered searches across the internet.</p>
@@ -89,7 +89,7 @@ require __DIR__ . '/layout/page-start.php';
 <p class="mb-0">Skoolyst is being built around a simple principle: people should spend less time searching through disconnected sources and more time making informed educational decisions, improving teaching and learning, and connecting with the right people and services.</p>
 </div>
 
-    <nav class="doc-prev-next" aria-label="Pagination"><a href="overview.php"><span class="pn-label">&larr; Previous</span><span class="pn-title">Skoolyst Overview</span></a><a href="products.php" class="next"><span class="pn-label">Next &rarr;</span><span class="pn-title">Product Ecosystem</span></a></nav>
+    <nav class="doc-prev-next" aria-label="Pagination"><a href="overview"><span class="pn-label">&larr; Previous</span><span class="pn-title">Skoolyst Overview</span></a><a href="products" class="next"><span class="pn-label">Next &rarr;</span><span class="pn-title">Product Ecosystem</span></a></nav>
   </article>
 </main>
 <?php require __DIR__ . '/layout/footer.php'; ?>

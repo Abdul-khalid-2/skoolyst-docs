@@ -8,11 +8,11 @@ require __DIR__ . '/../config/config.php';
   <?php require __DIR__ . '/../layout/head.php'; ?>
   <title>Stores Module Guide | Skoolyst Documentation</title>
   <meta name="description" content="How to use the Stores module for educational products and materials within the Skoolyst application." />
-  <link rel="canonical" href="https://docs.skoolyst.com/docs/guide-stores.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/docs/guide-stores" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Stores Module Guide | Skoolyst Documentation" />
   <meta property="og:description" content="How to use the Stores module within the Skoolyst application." />
-  <meta property="og:url" content="https://docs.skoolyst.com/docs/guide-stores.php" />
+  <meta property="og:url" content="https://docs.skoolyst.com/docs/guide-stores" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Stores Module Guide | Skoolyst Documentation" />
@@ -27,9 +27,9 @@ require __DIR__ . '/../layout/page-start.php';
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="../index.php">Home</a>
+        <a href="../">Home</a>
         <span class="breadcrumb-sep">/</span>
-        <a href="../guides.php">Guides</a>
+        <a href="../guides">Guides</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">Stores</span>
       </nav>
@@ -67,17 +67,17 @@ require __DIR__ . '/../layout/page-start.php';
 
       <h2 id="related">Related Documentation</h2>
       <ul>
-        <li><a href="../getting-started.php">Getting Started</a></li>
-        <li><a href="../features.php#stores">Stores Features</a></li>
-        <li><a href="../products.php">Product Ecosystem</a></li>
+        <li><a href="../getting-started">Getting Started</a></li>
+        <li><a href="../features#stores">Stores Features</a></li>
+        <li><a href="../products">Product Ecosystem</a></li>
       </ul>
 
       <nav class="doc-prev-next" aria-label="Pagination">
-        <a href="guide-schools.php">
+        <a href="guide-schools">
           <span class="pn-label">&larr; Previous</span>
           <span class="pn-title">Schools Listing</span>
         </a>
-        <a href="guide-media.php" class="next">
+        <a href="guide-media" class="next">
           <span class="pn-label">Next &rarr;</span>
           <span class="pn-title">Media Module</span>
         </a>

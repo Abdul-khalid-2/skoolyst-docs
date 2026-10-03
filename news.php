@@ -7,11 +7,11 @@
   <?php require __DIR__ . '/layout/head.php'; ?>
   <title>News &amp; Updates | Skoolyst Documentation</title>
   <meta name="description" content="Latest news, product updates, announcements and ecosystem developments from Skoolyst." />
-  <link rel="canonical" href="https://docs.skoolyst.com/news.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/news" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="News & Updates | Skoolyst Documentation" />
   <meta property="og:description" content="Latest news, product updates and announcements from Skoolyst." />
-  <meta property="og:url" content="https://docs.skoolyst.com/news.php" />
+  <meta property="og:url" content="https://docs.skoolyst.com/news" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="News & Updates | Skoolyst Documentation" />
@@ -26,7 +26,7 @@ require __DIR__ . '/layout/page-start.php';
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="index.php">Home</a>
+        <a href="./">Home</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">News</span>
       </nav>
@@ -75,7 +75,7 @@ require __DIR__ . '/layout/page-start.php';
             </div>
             <h3 class="news-title">Ecosystem Architecture Roadmap Published</h3>
             <p class="news-excerpt">The planned architecture for separating core modules into independent subdomain applications has been documented in the product ecosystem overview.</p>
-            <a href="products.php" class="news-read-more">Read More &rarr;</a>
+            <a href="products" class="news-read-more">Read More &rarr;</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -86,7 +86,7 @@ require __DIR__ . '/layout/page-start.php';
             </div>
             <h3 class="news-title">Feature Documentation Structure Released</h3>
             <p class="news-excerpt">Feature documentation with status badges is now available, organized by product across the Skoolyst ecosystem.</p>
-            <a href="features.php" class="news-read-more">Read More &rarr;</a>
+            <a href="features" class="news-read-more">Read More &rarr;</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -97,7 +97,7 @@ require __DIR__ . '/layout/page-start.php';
             </div>
             <h3 class="news-title">Version Tracking System Introduced</h3>
             <p class="news-excerpt">A structured version history and release notes system has been introduced to track Skoolyst development progress.</p>
-            <a href="versions.php" class="news-read-more">Read More &rarr;</a>
+            <a href="versions" class="news-read-more">Read More &rarr;</a>
           </div>
         </div>
         <div class="col-md-6">
@@ -108,7 +108,7 @@ require __DIR__ . '/layout/page-start.php';
             </div>
             <h3 class="news-title">Educational Focus Remains Core Priority</h3>
             <p class="news-excerpt">Skoolyst continues to prioritize its educational mission, building tools that serve schools, teachers, students and parents.</p>
-            <a href="about.php" class="news-read-more">Read More &rarr;</a>
+            <a href="about" class="news-read-more">Read More &rarr;</a>
           </div>
         </div>
       </div>
@@ -124,11 +124,11 @@ require __DIR__ . '/layout/page-start.php';
       </ul>
 
       <nav class="doc-prev-next" aria-label="Pagination">
-        <a href="release-notes.php">
+        <a href="release-notes">
           <span class="pn-label">&larr; Previous</span>
           <span class="pn-title">Release Notes</span>
         </a>
-        <a href="faq.php" class="next">
+        <a href="faq" class="next">
           <span class="pn-label">Next &rarr;</span>
           <span class="pn-title">FAQ</span>
         </a>

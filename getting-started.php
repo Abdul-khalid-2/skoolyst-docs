@@ -7,11 +7,11 @@
   <?php require __DIR__ . '/layout/head.php'; ?>
   <title>Getting Started | Skoolyst Documentation</title>
   <meta name="description" content="A beginner-friendly guide to understanding the Skoolyst ecosystem, its main application, modules and future products." />
-  <link rel="canonical" href="https://docs.skoolyst.com/getting-started.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/getting-started" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Getting Started | Skoolyst Documentation" />
   <meta property="og:description" content="A beginner-friendly guide to understanding the Skoolyst ecosystem." />
-  <meta property="og:url" content="https://docs.skoolyst.com/getting-started.php" />
+  <meta property="og:url" content="https://docs.skoolyst.com/getting-started" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Getting Started | Skoolyst Documentation" />
@@ -26,7 +26,7 @@ require __DIR__ . '/layout/page-start.php';
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="index.php">Home</a>
+        <a href="./">Home</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">Getting Started</span>
       </nav>
@@ -35,11 +35,11 @@ require __DIR__ . '/layout/page-start.php';
       <p class="lead">New to Skoolyst? This guide walks you through the ecosystem, the main application, its modules and what is coming next.</p>
 
       <h2 id="before-you-start">Start with the reason behind Skoolyst</h2>
-<p>Before exploring individual products, read <a href="why-skoolyst.php">Why Skoolyst?</a>. It explains the real-world problems that inspired the ecosystem and the people it is designed to serve.</p>
+<p>Before exploring individual products, read <a href="why-skoolyst">Why Skoolyst?</a>. It explains the real-world problems that inspired the ecosystem and the people it is designed to serve.</p>
 
 <h2 id="what-is-skoolyst">What is Skoolyst?</h2>
       <p>Skoolyst is an educational technology ecosystem designed to connect schools, teachers, students, parents and educational services through digital platforms. Rather than a single product, Skoolyst is being built as a family of interconnected applications that share a common goal: making educational resources more accessible, organized and useful.</p>
-      <p>For a deeper explanation, see the <a href="overview.php">Skoolyst Overview</a>.</p>
+      <p>For a deeper explanation, see the <a href="overview">Skoolyst Overview</a>.</p>
 
       <h2 id="understanding-the-ecosystem">Understanding the Skoolyst Ecosystem</h2>
       <p>The Skoolyst ecosystem consists of one main application and several planned subdomain applications. The main application currently contains multiple modules — Schools, Stores, Media and MCQs — that may later become independent applications under their own subdomains.</p>
@@ -56,19 +56,19 @@ require __DIR__ . '/layout/page-start.php';
       </ul>
 
       <h2 id="schools">Schools</h2>
-      <p>The Schools module provides a listing of schools within the platform. It is designed to help users discover and explore educational institutions. For detailed usage guidance, see the <a href="docs/guide-schools.php">Schools guide</a>.</p>
+      <p>The Schools module provides a listing of schools within the platform. It is designed to help users discover and explore educational institutions. For detailed usage guidance, see the <a href="docs/guide-schools">Schools guide</a>.</p>
 
       <h2 id="stores">Stores</h2>
-      <p>The Stores module is a marketplace for educational products, books and learning materials. It currently operates as a module within the main application. A separate <code>stores.skoolyst.com</code> subdomain is planned for the future. See the <a href="docs/guide-stores.php">Stores guide</a> for more.</p>
+      <p>The Stores module is a marketplace for educational products, books and learning materials. It currently operates as a module within the main application. A separate <code>stores.skoolyst.com</code> subdomain is planned for the future. See the <a href="docs/guide-stores">Stores guide</a> for more.</p>
 
       <h2 id="media">Media</h2>
-      <p>The Media module serves as an educational media hub for videos, audio and visual learning content. Like Stores, it is currently part of the main application with a separate subdomain planned. See the <a href="docs/guide-media.php">Media guide</a> for more.</p>
+      <p>The Media module serves as an educational media hub for videos, audio and visual learning content. Like Stores, it is currently part of the main application with a separate subdomain planned. See the <a href="docs/guide-media">Media guide</a> for more.</p>
 
       <h2 id="mcqs">MCQs</h2>
-      <p>The MCQs module provides multiple-choice question practice and assessment tools. It is currently integrated into the main application, with a separate <code>mcqs.skoolyst.com</code> subdomain planned. See the <a href="docs/guide-mcqs.php">MCQs guide</a> for more.</p>
+      <p>The MCQs module provides multiple-choice question practice and assessment tools. It is currently integrated into the main application, with a separate <code>mcqs.skoolyst.com</code> subdomain planned. See the <a href="docs/guide-mcqs">MCQs guide</a> for more.</p>
 
       <h2 id="ads">Ads</h2>
-      <p>Unlike the modules above, Skoolyst Ads (<code>ads.skoolyst.com</code>) is already a separate, deployed application — the centralized advertising engine that lets advertisers submit ads and connected Skoolyst apps request and display them through a shared API. See the <a href="docs/guide-ads.php">Skoolyst Ads guide</a> for the full walkthrough.</p>
+      <p>Unlike the modules above, Skoolyst Ads (<code>ads.skoolyst.com</code>) is already a separate, deployed application — the centralized advertising engine that lets advertisers submit ads and connected Skoolyst apps request and display them through a shared API. See the <a href="docs/guide-ads">Skoolyst Ads guide</a> for the full walkthrough.</p>
 
       <h2 id="future-applications">Future Applications</h2>
       <p>Several additional applications are planned as separate subdomains:</p>
@@ -78,7 +78,7 @@ require __DIR__ . '/layout/page-start.php';
         <li><strong>Stores</strong> (<code>stores.skoolyst.com</code>) — Planned / Coming Soon</li>
         <li><strong>Media</strong> (<code>media.skoolyst.com</code>) — Planned / Coming Soon</li>
       </ul>
-      <p>See the <a href="products.php">Products page</a> for the full ecosystem overview.</p>
+      <p>See the <a href="products">Products page</a> for the full ecosystem overview.</p>
 
       <h2 id="how-products-are-organized">How Products Are Organized</h2>
       <p>Skoolyst products follow a clear organizational model:</p>
@@ -92,9 +92,9 @@ require __DIR__ . '/layout/page-start.php';
       <h2 id="where-to-find-updates">Where to Find Updates</h2>
       <p>Stay informed about Skoolyst development through:</p>
       <ul>
-        <li><a href="release-notes.php">Release Notes</a> — detailed changelogs for each version</li>
-        <li><a href="news.php">News &amp; Updates</a> — announcements and product news</li>
-        <li><a href="versions.php">Versions</a> — version history and development status</li>
+        <li><a href="release-notes">Release Notes</a> — detailed changelogs for each version</li>
+        <li><a href="news">News &amp; Updates</a> — announcements and product news</li>
+        <li><a href="versions">Versions</a> — version history and development status</li>
       </ul>
 
       <h2 id="how-documentation-is-structured">How Documentation Is Structured</h2>
@@ -110,11 +110,11 @@ require __DIR__ . '/layout/page-start.php';
       </ul>
 
       <nav class="doc-prev-next" aria-label="Pagination">
-        <a href="index.php">
+        <a href="./">
           <span class="pn-label">&larr; Previous</span>
           <span class="pn-title">Home</span>
         </a>
-        <a href="overview.php" class="next">
+        <a href="overview" class="next">
           <span class="pn-label">Next &rarr;</span>
           <span class="pn-title">Skoolyst Overview</span>
         </a>

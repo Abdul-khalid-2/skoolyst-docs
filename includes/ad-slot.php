@@ -17,7 +17,7 @@ if ($__ad):
     $__validClick = $__clickUrl !== ''
         && filter_var($__clickUrl, FILTER_VALIDATE_URL)
         && substr_count($__clickUrl, '://') === 1;
-    $__trackedClickUrl = '/ads-track.php?event=click&placement=' . rawurlencode($adPlacementCode)
+    $__trackedClickUrl = '/ads-track?event=click&placement=' . rawurlencode($adPlacementCode)
         . '&ad_id=' . rawurlencode((string) ($__ad['id'] ?? ''))
         . '&redirect=' . rawurlencode($__validClick ? $__clickUrl : '#');
     $__imageUrl = AdEngine::imageUrl($__ad['image_path'] ?? null);
@@ -43,7 +43,7 @@ if ($__ad):
       </span>
     </a>
   </div>
-  <img src="/ads-track.php?event=impression&placement=<?= rawurlencode($adPlacementCode) ?>&ad_id=<?= rawurlencode((string) ($__ad['id'] ?? '')) ?>" alt="" width="1" height="1" style="position:absolute;left:-9999px;" aria-hidden="true" />
+  <img src="/ads-track?event=impression&placement=<?= rawurlencode($adPlacementCode) ?>&ad_id=<?= rawurlencode((string) ($__ad['id'] ?? '')) ?>" alt="" width="1" height="1" style="position:absolute;left:-9999px;" aria-hidden="true" />
 <?php
 endif;
 unset($__ad, $__clickUrl, $__validClick, $__trackedClickUrl, $__imageUrl);

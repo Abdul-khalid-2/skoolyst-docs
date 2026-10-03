@@ -7,11 +7,11 @@
   <?php require __DIR__ . '/layout/head.php'; ?>
   <title>API &amp; Developer Documentation | Skoolyst</title>
   <meta name="description" content="Developer documentation for the Skoolyst platform. API overview, authentication, endpoints, webhooks, errors, rate limits and SDKs — currently being prepared." />
-  <link rel="canonical" href="https://docs.skoolyst.com/developers.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/developers" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="API & Developer Documentation | Skoolyst" />
   <meta property="og:description" content="Developer documentation for the Skoolyst platform. Currently being prepared." />
-  <meta property="og:url" content="https://docs.skoolyst.com/developers.php" />
+  <meta property="og:url" content="https://docs.skoolyst.com/developers" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="API & Developer Documentation | Skoolyst" />
@@ -26,7 +26,7 @@ require __DIR__ . '/layout/page-start.php';
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="index.php">Home</a>
+        <a href="./">Home</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">API / Developers</span>
       </nav>
@@ -43,7 +43,7 @@ require __DIR__ . '/layout/page-start.php';
       </div>
 
       <h2 id="ads-api">Skoolyst Ads API</h2>
-      <p>Skoolyst Ads (<a href="https://ads.skoolyst.com">ads.skoolyst.com</a>) is the first Skoolyst application with a real, public API. It lets a connected app request an eligible ad for one of its own placements. Full guide: <a href="../docs/guide-ads.php">Skoolyst Ads</a>.</p>
+      <p>Skoolyst Ads (<a href="https://ads.skoolyst.com">ads.skoolyst.com</a>) is the first Skoolyst application with a real, public API. It lets a connected app request an eligible ad for one of its own placements. Full guide: <a href="../docs/guide-ads">Skoolyst Ads</a>.</p>
       <pre><code># Get an ad for a placement
 
 ## Description
@@ -177,11 +177,11 @@ Content-Type: application/json
       <p class="placeholder-notice">This template is for illustration only, beyond the real Skoolyst Ads API documented above.</p>
 
       <nav class="doc-prev-next" aria-label="Pagination">
-        <a href="faq.php">
+        <a href="faq">
           <span class="pn-label">&larr; Previous</span>
           <span class="pn-title">FAQ</span>
         </a>
-        <a href="about.php" class="next">
+        <a href="about" class="next">
           <span class="pn-label">Next &rarr;</span>
           <span class="pn-title">About Skoolyst</span>
         </a>

@@ -7,11 +7,11 @@
   <?php require __DIR__ . '/layout/head.php'; ?>
   <title>Guides | Skoolyst Documentation</title>
   <meta name="description" content="Documentation guides organized by category — Getting Started, Schools, Stores, Media, MCQs, Accounts, Content Management, Platform Usage, Administration and Troubleshooting." />
-  <link rel="canonical" href="https://docs.skoolyst.com/guides.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/guides" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Guides | Skoolyst Documentation" />
   <meta property="og:description" content="Documentation guides organized by category and product." />
-  <meta property="og:url" content="https://docs.skoolyst.com/guides.php" />
+  <meta property="og:url" content="https://docs.skoolyst.com/guides" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Guides | Skoolyst Documentation" />
@@ -26,7 +26,7 @@ require __DIR__ . '/layout/page-start.php';
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="index.php">Home</a>
+        <a href="./">Home</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">Guides</span>
       </nav>
@@ -37,7 +37,7 @@ require __DIR__ . '/layout/page-start.php';
       <h2 id="getting-started">Getting Started</h2>
       <div class="row g-3">
         <div class="col-md-6">
-          <a href="getting-started.php" class="card-base guide-card">
+          <a href="getting-started" class="card-base guide-card">
             <span class="guide-category">Getting Started</span>
             <h3 class="guide-title">Introduction to Skoolyst</h3>
             <p class="guide-desc">Learn what Skoolyst is and how the ecosystem is organized.</p>
@@ -45,7 +45,7 @@ require __DIR__ . '/layout/page-start.php';
           </a>
         </div>
         <div class="col-md-6">
-          <a href="overview.php" class="card-base guide-card">
+          <a href="overview" class="card-base guide-card">
             <span class="guide-category">Getting Started</span>
             <h3 class="guide-title">Understanding the Ecosystem</h3>
             <p class="guide-desc">Overview of the Skoolyst ecosystem, vision and architecture.</p>
@@ -57,7 +57,7 @@ require __DIR__ . '/layout/page-start.php';
       <h2 id="schools">Schools</h2>
       <div class="row g-3">
         <div class="col-md-6">
-          <a href="docs/guide-schools.php" class="card-base guide-card">
+          <a href="docs/guide-schools" class="card-base guide-card">
             <span class="guide-category">Schools</span>
             <h3 class="guide-title">Schools Listing Module</h3>
             <p class="guide-desc">How to use the Schools listing module within the Skoolyst application.</p>
@@ -69,7 +69,7 @@ require __DIR__ . '/layout/page-start.php';
       <h2 id="stores">Stores</h2>
       <div class="row g-3">
         <div class="col-md-6">
-          <a href="docs/guide-stores.php" class="card-base guide-card">
+          <a href="docs/guide-stores" class="card-base guide-card">
             <span class="guide-category">Stores</span>
             <h3 class="guide-title">Stores Module</h3>
             <p class="guide-desc">How to use the Stores module for educational products and materials.</p>
@@ -81,7 +81,7 @@ require __DIR__ . '/layout/page-start.php';
       <h2 id="media">Media</h2>
       <div class="row g-3">
         <div class="col-md-6">
-          <a href="docs/guide-media.php" class="card-base guide-card">
+          <a href="docs/guide-media" class="card-base guide-card">
             <span class="guide-category">Media</span>
             <h3 class="guide-title">Media Module</h3>
             <p class="guide-desc">How to use the Media module for educational content.</p>
@@ -93,7 +93,7 @@ require __DIR__ . '/layout/page-start.php';
       <h2 id="mcqs">MCQs</h2>
       <div class="row g-3">
         <div class="col-md-6">
-          <a href="docs/guide-mcqs.php" class="card-base guide-card">
+          <a href="docs/guide-mcqs" class="card-base guide-card">
             <span class="guide-category">MCQs</span>
             <h3 class="guide-title">MCQs Module</h3>
             <p class="guide-desc">How to use the MCQs module for practice and assessment.</p>
@@ -105,7 +105,7 @@ require __DIR__ . '/layout/page-start.php';
       <h2 id="ads">Ads</h2>
       <div class="row g-3">
         <div class="col-md-6">
-          <a href="docs/guide-ads.php" class="card-base guide-card">
+          <a href="docs/guide-ads" class="card-base guide-card">
             <span class="guide-category">Ads</span>
             <h3 class="guide-title">Skoolyst Ads</h3>
             <p class="guide-desc">How the advertising engine works — placements, ad moderation and the API connected apps use.</p>
@@ -175,11 +175,11 @@ require __DIR__ . '/layout/page-start.php';
       </div>
 
       <nav class="doc-prev-next" aria-label="Pagination">
-        <a href="products.php">
+        <a href="products">
           <span class="pn-label">&larr; Previous</span>
           <span class="pn-title">Product Ecosystem</span>
         </a>
-        <a href="features.php" class="next">
+        <a href="features" class="next">
           <span class="pn-label">Next &rarr;</span>
           <span class="pn-title">Features</span>
         </a>

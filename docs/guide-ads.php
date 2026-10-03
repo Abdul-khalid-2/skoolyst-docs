@@ -8,11 +8,11 @@ require __DIR__ . '/../config/config.php';
   <?php require __DIR__ . '/../layout/head.php'; ?>
   <title>Guide: Skoolyst Ads | Skoolyst Documentation</title>
   <meta name="description" content="How Skoolyst Ads works — the centralized advertising engine that lets advertisers submit ads and connected Skoolyst apps request and display them through a shared API." />
-  <link rel="canonical" href="https://docs.skoolyst.com/docs/guide-ads.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/docs/guide-ads" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Guide: Skoolyst Ads | Skoolyst Documentation" />
   <meta property="og:description" content="How Skoolyst Ads works — advertisers, admin moderation, placements and the API connected apps use to request ads." />
-  <meta property="og:url" content="https://docs.skoolyst.com/docs/guide-ads.php" />
+  <meta property="og:url" content="https://docs.skoolyst.com/docs/guide-ads" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Guide: Skoolyst Ads | Skoolyst Documentation" />
@@ -27,9 +27,9 @@ require __DIR__ . '/../layout/page-start.php';
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="../index.php">Home</a>
+        <a href="../">Home</a>
         <span class="breadcrumb-sep">/</span>
-        <a href="../guides.php">Guides</a>
+        <a href="../guides">Guides</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">Ads</span>
       </nav>
@@ -48,7 +48,7 @@ require __DIR__ . '/../layout/page-start.php';
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
         </span>
         <div class="info-content">
-          <p><strong>Website:</strong> <a href="https://ads.skoolyst.com">ads.skoolyst.com</a>. Unlike most other Skoolyst products in this documentation, Ads is not a planning-stage module — it is a deployed, working application with its own database, advertiser dashboard, admin panel and public API, currently on its first tracked release (v1). Future changes to it will be documented as bug fixes, modifications and updates in the <a href="../release-notes.php">Release Notes</a>.</p>
+          <p><strong>Website:</strong> <a href="https://ads.skoolyst.com">ads.skoolyst.com</a>. Unlike most other Skoolyst products in this documentation, Ads is not a planning-stage module — it is a deployed, working application with its own database, advertiser dashboard, admin panel and public API, currently on its first tracked release (v1). Future changes to it will be documented as bug fixes, modifications and updates in the <a href="../release-notes">Release Notes</a>.</p>
         </div>
       </div>
 
@@ -174,22 +174,22 @@ If nothing is eligible, "ad" is null rather than the request failing.
         <li>Click and impression tracking, per ad and per day</li>
         <li>The public <code>GET /ads/serve</code> API used by connected apps</li>
       </ul>
-      <p>See <a href="../versions.php#ads">Versions</a> for how this fits alongside the rest of the Skoolyst ecosystem, and <a href="../release-notes.php#ads">Release Notes</a> for the dated v1 entry. From here on, changes to Skoolyst Ads are tracked as bug fixes, modifications and updates against this baseline rather than as a from-scratch build.</p>
+      <p>See <a href="../versions#ads">Versions</a> for how this fits alongside the rest of the Skoolyst ecosystem, and <a href="../release-notes#ads">Release Notes</a> for the dated v1 entry. From here on, changes to Skoolyst Ads are tracked as bug fixes, modifications and updates against this baseline rather than as a from-scratch build.</p>
 
       <h2 id="related">Related Documentation</h2>
       <ul>
-        <li><a href="../features.php#ads">Ads Features</a></li>
-        <li><a href="../versions.php#ads">Ads Version Details</a></li>
-        <li><a href="../developers.php#ads-api">Ads API Reference</a></li>
-        <li><a href="../products.php">Product Ecosystem</a></li>
+        <li><a href="../features#ads">Ads Features</a></li>
+        <li><a href="../versions#ads">Ads Version Details</a></li>
+        <li><a href="../developers#ads-api">Ads API Reference</a></li>
+        <li><a href="../products">Product Ecosystem</a></li>
       </ul>
 
       <nav class="doc-prev-next" aria-label="Pagination">
-        <a href="guide-mcqs.php">
+        <a href="guide-mcqs">
           <span class="pn-label">&larr; Previous</span>
           <span class="pn-title">MCQs Module</span>
         </a>
-        <a href="../guides.php" class="next">
+        <a href="../guides" class="next">
           <span class="pn-label">Next &rarr;</span>
           <span class="pn-title">All Guides</span>
         </a>

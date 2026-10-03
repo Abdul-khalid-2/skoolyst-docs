@@ -7,11 +7,11 @@
   <?php require __DIR__ . '/layout/head.php'; ?>
   <title>FAQ | Skoolyst Documentation</title>
   <meta name="description" content="Frequently asked questions about Skoolyst, its products, the ecosystem architecture and the documentation portal." />
-  <link rel="canonical" href="https://docs.skoolyst.com/faq.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/faq" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="FAQ | Skoolyst Documentation" />
   <meta property="og:description" content="Frequently asked questions about Skoolyst products and ecosystem." />
-  <meta property="og:url" content="https://docs.skoolyst.com/faq.php" />
+  <meta property="og:url" content="https://docs.skoolyst.com/faq" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="FAQ | Skoolyst Documentation" />
@@ -40,7 +40,7 @@ require __DIR__ . '/layout/page-start.php';
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="index.php">Home</a>
+        <a href="./">Home</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">FAQ</span>
       </nav>
@@ -116,7 +116,7 @@ require __DIR__ . '/layout/page-start.php';
                 <li><strong>Stores</strong> — <code>stores.skoolyst.com</code> (Planned / Coming Soon)</li>
                 <li><strong>Media</strong> — <code>media.skoolyst.com</code> (Planned / Coming Soon)</li>
               </ul>
-              <p>Skoolyst Ads (<code>ads.skoolyst.com</code>) is no longer in this category — it is already a deployed, separate application. See <a href="docs/guide-ads.php">the Skoolyst Ads guide</a>.</p>
+              <p>Skoolyst Ads (<code>ads.skoolyst.com</code>) is no longer in this category — it is already a deployed, separate application. See <a href="docs/guide-ads">the Skoolyst Ads guide</a>.</p>
             </div>
           </div>
         </div>
@@ -190,16 +190,16 @@ require __DIR__ . '/layout/page-start.php';
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq14">What is Skoolyst Ads?</button></h2>
-          <div id="faq14" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body"><p>Skoolyst Ads (<a href="https://ads.skoolyst.com">ads.skoolyst.com</a>) is a deployed, centralized advertising engine. Advertisers submit ads targeting one or more of a connected app's placements, an admin reviews and approves them, and connected Skoolyst applications request and display approved ads through a shared API, reporting clicks and impressions back. See the <a href="docs/guide-ads.php">Skoolyst Ads guide</a> for the full walkthrough.</p></div></div>
+          <div id="faq14" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body"><p>Skoolyst Ads (<a href="https://ads.skoolyst.com">ads.skoolyst.com</a>) is a deployed, centralized advertising engine. Advertisers submit ads targeting one or more of a connected app's placements, an admin reviews and approves them, and connected Skoolyst applications request and display approved ads through a shared API, reporting clicks and impressions back. See the <a href="docs/guide-ads">Skoolyst Ads guide</a> for the full walkthrough.</p></div></div>
         </div>
       </div>
 
       <nav class="doc-prev-next" aria-label="Pagination">
-        <a href="news.php">
+        <a href="news">
           <span class="pn-label">&larr; Previous</span>
           <span class="pn-title">News &amp; Updates</span>
         </a>
-        <a href="developers.php" class="next">
+        <a href="developers" class="next">
           <span class="pn-label">Next &rarr;</span>
           <span class="pn-title">API / Developers</span>
         </a>

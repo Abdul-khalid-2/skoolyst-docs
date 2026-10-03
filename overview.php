@@ -7,7 +7,7 @@
   <?php require __DIR__ . '/layout/head.php'; ?>
   <title>Skoolyst Overview | Skoolyst Documentation</title>
   <meta name="description" content="What Skoolyst is, who it serves, why the ecosystem exists and how its educational applications fit together." />
-  <link rel="canonical" href="https://docs.skoolyst.com/overview.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/overview" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Skoolyst Overview | Skoolyst Documentation" />
   <meta property="og:description" content="What Skoolyst is, who it serves, why the ecosystem exists and how its educational applications fit together." />
@@ -21,7 +21,7 @@ require __DIR__ . '/layout/page-start.php';
 <main id="main-content">
   <article class="doc-article">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="index.php">Home</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">Overview</span>
+      <a href="./">Home</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">Overview</span>
     </nav>
     <h1>Skoolyst Overview</h1>
 <p class="lead">Skoolyst is an educational technology ecosystem designed to make education-related discovery, connection, learning and information sharing more organized.</p>
@@ -62,7 +62,7 @@ require __DIR__ . '/layout/page-start.php';
 <h2 id="core-principle">Core principle</h2>
 <div class="info-banner"><span class="info-icon">✓</span><div class="info-content"><p><strong>Better information leads to better decisions.</strong> Skoolyst does not choose a school, teacher or service for a user. It aims to organize useful information so people can discover options, understand them and decide for themselves.</p></div></div>
 
-    <nav class="doc-prev-next" aria-label="Pagination"><a href="why-skoolyst.php"><span class="pn-label">&larr; Previous</span><span class="pn-title">Why Skoolyst?</span></a><a href="products.php" class="next"><span class="pn-label">Next &rarr;</span><span class="pn-title">Product Ecosystem</span></a></nav>
+    <nav class="doc-prev-next" aria-label="Pagination"><a href="why-skoolyst"><span class="pn-label">&larr; Previous</span><span class="pn-title">Why Skoolyst?</span></a><a href="products" class="next"><span class="pn-label">Next &rarr;</span><span class="pn-title">Product Ecosystem</span></a></nav>
   </article>
 </main>
 <?php require __DIR__ . '/layout/footer.php'; ?>

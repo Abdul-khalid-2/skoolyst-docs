@@ -48,8 +48,8 @@ require __DIR__ . '/layout/page-start.php';
         <p class="hero-tagline">Understand the idea, ecosystem and products behind Skoolyst.</p>
         <p class="hero-desc">Learn why Skoolyst was created, what problems it aims to solve, how its products connect parents, schools, teachers and students, and how the ecosystem is evolving.</p>
         <div class="hero-buttons">
-          <a href="getting-started.php" class="btn-hero-primary">Get Started</a>
-          <a href="products.php" class="btn-hero-secondary">Explore Products</a>
+          <a href="getting-started" class="btn-hero-primary">Get Started</a>
+          <a href="products" class="btn-hero-secondary">Explore Products</a>
         </div>
         <div class="hero-search">
           <span class="hero-search-icon">
@@ -78,7 +78,7 @@ require __DIR__ . '/layout/page-start.php';
         </div>
         <div class="row g-4">
           <div class="col-md-6 col-lg-3">
-            <a href="getting-started.php" class="quick-link">
+            <a href="getting-started" class="quick-link">
               <span class="quick-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
               </span>
@@ -89,7 +89,7 @@ require __DIR__ . '/layout/page-start.php';
             </a>
           </div>
           <div class="col-md-6 col-lg-3">
-            <a href="overview.php" class="quick-link">
+            <a href="overview" class="quick-link">
               <span class="quick-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
               </span>
@@ -100,7 +100,7 @@ require __DIR__ . '/layout/page-start.php';
             </a>
           </div>
           <div class="col-md-6 col-lg-3">
-            <a href="guides.php" class="quick-link">
+            <a href="guides" class="quick-link">
               <span class="quick-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
               </span>
@@ -111,7 +111,7 @@ require __DIR__ . '/layout/page-start.php';
             </a>
           </div>
           <div class="col-md-6 col-lg-3">
-            <a href="developers.php" class="quick-link">
+            <a href="developers" class="quick-link">
               <span class="quick-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
               </span>
@@ -138,7 +138,7 @@ require __DIR__ . '/layout/page-start.php';
           <div class="col-lg-4"><div class="card-base h-100"><h3>For Schools</h3><p class="mb-0">Give schools a structured digital presence and a better way to become discoverable to families without relying only on banners, social posts or a separate website.</p></div></div>
           <div class="col-lg-4"><div class="card-base h-100"><h3>For Teachers & Students</h3><p class="mb-0">Help teachers showcase professional experience and help students practice knowledge through education-focused tools and content.</p></div></div>
         </div>
-        <div class="text-center mt-4"><a href="why-skoolyst.php" class="btn-hero-secondary">Read the Skoolyst Story &rarr;</a></div>
+        <div class="text-center mt-4"><a href="why-skoolyst" class="btn-hero-secondary">Read the Skoolyst Story &rarr;</a></div>
       </div>
     </section>
 
@@ -194,7 +194,7 @@ require __DIR__ . '/layout/page-start.php';
               <span class="product-subdomain">ads.skoolyst.com</span>
               <p class="product-desc">Centralized advertising engine — advertisers submit ads, admins moderate, connected apps request and display them via API.</p>
               <span class="status-badge status-available">Available — v1</span>
-              <p class="mt-2 mb-0"><a href="docs/guide-ads.php">Read the guide &rarr;</a></p>
+              <p class="mt-2 mb-0"><a href="docs/guide-ads">Read the guide &rarr;</a></p>
             </div>
           </div>
           <div class="col-md-6 col-lg-4">
@@ -255,7 +255,7 @@ require __DIR__ . '/layout/page-start.php';
         </div>
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
-            <a href="features.php" class="quick-link">
+            <a href="features" class="quick-link">
               <span class="quick-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
               </span>
@@ -266,7 +266,7 @@ require __DIR__ . '/layout/page-start.php';
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a href="versions.php" class="quick-link">
+            <a href="versions" class="quick-link">
               <span class="quick-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
               </span>
@@ -277,7 +277,7 @@ require __DIR__ . '/layout/page-start.php';
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a href="release-notes.php" class="quick-link">
+            <a href="release-notes" class="quick-link">
               <span class="quick-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/></svg>
               </span>
@@ -288,7 +288,7 @@ require __DIR__ . '/layout/page-start.php';
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a href="news.php" class="quick-link">
+            <a href="news" class="quick-link">
               <span class="quick-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/><path d="M18 14h-8"/><path d="M15 18h-5"/><path d="M10 6h8v4h-8V6Z"/></svg>
               </span>
@@ -299,7 +299,7 @@ require __DIR__ . '/layout/page-start.php';
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a href="faq.php" class="quick-link">
+            <a href="faq" class="quick-link">
               <span class="quick-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
               </span>
@@ -310,7 +310,7 @@ require __DIR__ . '/layout/page-start.php';
             </a>
           </div>
           <div class="col-md-6 col-lg-4">
-            <a href="about.php" class="quick-link">
+            <a href="about" class="quick-link">
               <span class="quick-link-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
               </span>

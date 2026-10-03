@@ -7,7 +7,7 @@
   <?php require __DIR__ . '/layout/head.php'; ?>
   <title>About Skoolyst | Skoolyst Documentation</title>
   <meta name="description" content="The purpose, vision, mission and product philosophy behind the Skoolyst educational technology ecosystem." />
-  <link rel="canonical" href="https://docs.skoolyst.com/about.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/about" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="About Skoolyst | Skoolyst Documentation" />
   <meta property="og:description" content="The purpose, vision, mission and product philosophy behind the Skoolyst educational technology ecosystem." />
@@ -21,7 +21,7 @@ require __DIR__ . '/layout/page-start.php';
 <main id="main-content">
   <article class="doc-article">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="index.php">Home</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">About Skoolyst</span>
+      <a href="./">Home</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">About Skoolyst</span>
     </nav>
     <h1>About Skoolyst</h1>
 <p class="lead">Skoolyst is being built as an education-focused technology ecosystem rather than a collection of unrelated tools.</p>
@@ -34,7 +34,7 @@ require __DIR__ . '/layout/page-start.php';
 <h2 id="community">The community layer</h2><p>Skoolyst is also intended to become a place where education stakeholders can share experiences and practical knowledge. Articles, school information, teacher profiles, assessments and media can create a useful knowledge network around the core platform.</p>
 <h2 id="documentation">About this documentation</h2><p>This documentation explains the purpose, products, features, guides, architecture and development status of Skoolyst. Because the ecosystem is under development, planned features and future applications are clearly identified rather than presented as already released functionality.</p>
 
-    <nav class="doc-prev-next" aria-label="Pagination"><a href="faq.php"><span class="pn-label">&larr; Previous</span><span class="pn-title">FAQ</span></a></nav>
+    <nav class="doc-prev-next" aria-label="Pagination"><a href="faq"><span class="pn-label">&larr; Previous</span><span class="pn-title">FAQ</span></a></nav>
   </article>
 </main>
 <?php require __DIR__ . '/layout/footer.php'; ?>

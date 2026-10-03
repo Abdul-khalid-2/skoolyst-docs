@@ -7,11 +7,11 @@
   <?php require __DIR__ . '/layout/head.php'; ?>
   <title>Features | Skoolyst Documentation</title>
   <meta name="description" content="Feature documentation organized by product with status badges — Available, In Development, Coming Soon and Planned." />
-  <link rel="canonical" href="https://docs.skoolyst.com/features.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/features" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Features | Skoolyst Documentation" />
   <meta property="og:description" content="Feature documentation organized by product with status badges." />
-  <meta property="og:url" content="https://docs.skoolyst.com/features.php" />
+  <meta property="og:url" content="https://docs.skoolyst.com/features" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Features | Skoolyst Documentation" />
@@ -26,7 +26,7 @@ require __DIR__ . '/layout/page-start.php';
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="index.php">Home</a>
+        <a href="./">Home</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">Features</span>
       </nav>
@@ -135,7 +135,7 @@ require __DIR__ . '/layout/page-start.php';
 </ul>
 
 <h2 id="ads">Ads</h2>
-      <p>Skoolyst Ads is deployed and documented in full in the <a href="docs/guide-ads.php">Skoolyst Ads guide</a>.</p>
+      <p>Skoolyst Ads is deployed and documented in full in the <a href="docs/guide-ads">Skoolyst Ads guide</a>.</p>
       <div class="card-base">
         <div class="feature-item">
           <div class="feature-info"><div class="feature-name">Ad Submission</div><div class="feature-desc">Advertisers submit ads with an image, description, call-to-action and click URL, targeting a connected app's placement(s).</div></div>
@@ -180,11 +180,11 @@ require __DIR__ . '/layout/page-start.php';
       </div>
 
       <nav class="doc-prev-next" aria-label="Pagination">
-        <a href="guides.php">
+        <a href="guides">
           <span class="pn-label">&larr; Previous</span>
           <span class="pn-title">Guides</span>
         </a>
-        <a href="versions.php" class="next">
+        <a href="versions" class="next">
           <span class="pn-label">Next &rarr;</span>
           <span class="pn-title">Versions</span>
         </a>

@@ -43,9 +43,10 @@
     return path;
   }
 
+  // Clean URLs: the last path segment has no ".php", so strip it before comparing.
   function isHome() {
-    var path = window.location.pathname.split('/').pop();
-    return path === '' || path === 'index.php';
+    var path = (window.location.pathname.split('/').pop() || '').replace(/\.php$/, '');
+    return path === '' || path === 'index';
   }
 
   function wrapContent() {
@@ -308,7 +309,7 @@
   function initLayout() {
     BASE = getBasePath();
     var main = document.getElementById('main-content') || document.querySelector('main');
-    var isHomePage = !document.querySelector('.doc-article') && (window.location.pathname.split('/').pop() === '' || window.location.pathname.split('/').pop() === 'index.php');
+    var isHomePage = !document.querySelector('.doc-article') && isHome();
 
     if (!isHomePage) {
       wrapContent();

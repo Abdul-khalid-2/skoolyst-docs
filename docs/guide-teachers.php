@@ -8,7 +8,7 @@ require __DIR__ . '/../config/config.php';
   <?php require __DIR__ . '/../layout/head.php'; ?>
   <title>Guide: Skoolyst Teachers | Skoolyst Documentation</title>
   <meta name="description" content="Understand the planned teacher profile workflow for qualifications, experience, profile sharing and school-teacher discovery." />
-  <link rel="canonical" href="https://docs.skoolyst.com/guide-teachers.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/docs/guide-teachers" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Guide: Skoolyst Teachers | Skoolyst Documentation" />
   <meta property="og:description" content="Understand the planned teacher profile workflow for qualifications, experience, profile sharing and school-teacher discovery." />
@@ -22,7 +22,7 @@ require __DIR__ . '/../layout/page-start.php';
 <main id="main-content">
   <article class="doc-article">
     <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="index.php">Home</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">Skoolyst Teachers</span>
+      <a href="./">Home</a><span class="breadcrumb-sep">/</span><span class="breadcrumb-current">Skoolyst Teachers</span>
     </nav>
     <h1>Guide: Skoolyst Teachers</h1>
 <p class="lead">Understand the purpose of the teacher profile product and how it is intended to improve the connection between teachers, schools and recruiters.</p>
@@ -50,7 +50,7 @@ require __DIR__ . '/../layout/page-start.php';
 <h2 id="goal">The bigger goal</h2>
 <p>Skoolyst Teachers is not only a CV builder. Its larger purpose is to create a discoverable professional connection between teachers and schools, reducing dependence on scattered resumes and informal hiring networks.</p>
 
-    <nav class="doc-prev-next" aria-label="Pagination"><a href="docs/guide-mcqs.php"><span class="pn-label">&larr; Previous</span><span class="pn-title">MCQs Module</span></a><a href="products.php" class="next"><span class="pn-label">Next &rarr;</span><span class="pn-title">Product Ecosystem</span></a></nav>
+    <nav class="doc-prev-next" aria-label="Pagination"><a href="docs/guide-mcqs"><span class="pn-label">&larr; Previous</span><span class="pn-title">MCQs Module</span></a><a href="products" class="next"><span class="pn-label">Next &rarr;</span><span class="pn-title">Product Ecosystem</span></a></nav>
   </article>
 </main>
 <?php require __DIR__ . '/../layout/footer.php'; ?>

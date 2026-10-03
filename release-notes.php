@@ -7,11 +7,11 @@
   <?php require __DIR__ . '/layout/head.php'; ?>
   <title>Release Notes | Skoolyst Documentation</title>
   <meta name="description" content="Latest updates, changes, fixes and known issues for Skoolyst. Release notes will be added as development versions are published." />
-  <link rel="canonical" href="https://docs.skoolyst.com/release-notes.php" />
+  <link rel="canonical" href="https://docs.skoolyst.com/release-notes" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Release Notes | Skoolyst Documentation" />
   <meta property="og:description" content="Latest updates, changes, fixes and known issues for Skoolyst." />
-  <meta property="og:url" content="https://docs.skoolyst.com/release-notes.php" />
+  <meta property="og:url" content="https://docs.skoolyst.com/release-notes" />
   <meta property="og:site_name" content="Skoolyst Documentation" />
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Release Notes | Skoolyst Documentation" />
@@ -26,7 +26,7 @@ require __DIR__ . '/layout/page-start.php';
   <main id="main-content">
     <article class="doc-article">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
-        <a href="index.php">Home</a>
+        <a href="./">Home</a>
         <span class="breadcrumb-sep">/</span>
         <span class="breadcrumb-current">Release Notes</span>
       </nav>
@@ -158,11 +158,11 @@ require __DIR__ . '/layout/page-start.php';
       <p>This layout is designed to be easy to update when real releases happen. Simply add a new <code>release-entry</code> block at the top with the relevant details.</p>
 
       <nav class="doc-prev-next" aria-label="Pagination">
-        <a href="versions.php">
+        <a href="versions">
           <span class="pn-label">&larr; Previous</span>
           <span class="pn-title">Versions</span>
         </a>
-        <a href="news.php" class="next">
+        <a href="news" class="next">
           <span class="pn-label">Next &rarr;</span>
           <span class="pn-title">News &amp; Updates</span>
         </a>
